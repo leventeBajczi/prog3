@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968" standalone="no"?>
+<jardesc>
+    <jar path="/home/levente/hello.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/calculator/hello.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="false" mainClassHandleIdentifier="=calculator/src&lt;sample.prog{Program.java[Program" manifestLocation="/calculator/MANIFEST.mf" manifestVersion="1.0" reuseManifest="true" saveManifest="true" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=calculator/src"/>
+        <file path="/calculator/.gitignore"/>
+        <file path="/calculator/.classpath"/>
+        <file path="/calculator/.project"/>
+    </selectedElements>
+</jardesc>
