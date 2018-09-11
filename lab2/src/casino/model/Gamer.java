@@ -4,15 +4,16 @@ public class Gamer {
 
     protected Board board;
 
-
-    public void step()
+    public Gamer(Board board)
     {
-
+        setBoard(board);
     }
+
+    public void step(){}
 
     public void setBoard(Board a)
     {
-
+        board = a;
     }
 
 }
