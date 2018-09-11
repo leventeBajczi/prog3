@@ -9,14 +9,8 @@ public class Main {
 
     public static void main(String [] args)
     {
-        Board board = new Board();
-        try
-        {
-            board.round();
-        }
-        catch (GamerNotFound e)
-        {
-            e.printStackTrace();
-        }
+        Beginner beginner = new Beginner(null);
+        beginner = null;
+        System.gc();
     }
 }

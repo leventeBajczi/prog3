@@ -16,9 +16,15 @@ public abstract class Gamer {
 
     public abstract void step();
 
-    public void setBoard(Board a)
+    private void setBoard(Board a)
     {
         board = a;
     }
 
+    public abstract String toString();
+
+    public void finalize()
+    {
+        System.out.println(uuid + ": " + toString());
+    }
 }
