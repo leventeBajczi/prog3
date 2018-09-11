@@ -17,6 +17,6 @@ public class Beginner extends Gamer {
 
     public String toString()
     {
-        return getClass().getSimpleName();
+        return getClass().getSimpleName() + uuid;
     }
 }

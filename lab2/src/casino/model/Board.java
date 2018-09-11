@@ -1,6 +1,8 @@
 package casino.model;
 
 
+import casino.exception.GamerNotFound;
+
 public class Board {
     private Gamer gamer[];
     private double pot;
@@ -42,8 +44,8 @@ public class Board {
         pot += d;
     }
 
-    public void round()
-    {
+    public void round() throws GamerNotFound {
+        if(gamer[0] == null) throw new GamerNotFound();
         for(Gamer g : gamer)
             if(g != null) g.step();
         round++;

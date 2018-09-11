@@ -1,5 +1,6 @@
 package casino;
 
+import casino.exception.GamerNotFound;
 import casino.model.Board;
 import casino.model.gamer.Beginner;
 import casino.model.gamer.Robot;
@@ -14,6 +15,12 @@ public class Main {
         for(int i = 0; i<2;i++)
             board.addGamer(new Robot(board));
         for(int i = 0; i<3; i++)
-            board.round();
+            try{
+                board.round();
+            }
+            catch(GamerNotFound e)
+            {
+                e.printStackTrace();
+            }
     }
 }
