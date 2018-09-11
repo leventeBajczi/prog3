@@ -1,6 +1,6 @@
 package casino.model;
 
-public class Gamer {
+public abstract class Gamer {
 
     protected Board board;
 
@@ -9,7 +9,7 @@ public class Gamer {
         setBoard(board);
     }
 
-    public void step(){}
+    public abstract void step();
 
     public void setBoard(Board a)
     {

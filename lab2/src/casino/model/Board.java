@@ -22,11 +22,11 @@ public class Board {
 
     public void addGamer(Gamer j)
     {
-        for(Gamer g : gamer)
+        for(int i = 0; i<gamer.length; i++)
         {
-            if(g == null)
+            if(gamer[i] == null)
             {
-                g = j;
+                gamer[i] = j;
                 break;
             }
         }

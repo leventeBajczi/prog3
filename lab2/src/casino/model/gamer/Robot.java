@@ -12,11 +12,11 @@ public class Robot extends Gamer {
 
     public void step()
     {
-
+        System.out.println(toString() + ", Runde: " + board.getRound());
     }
 
     public String toString()
     {
-        return null;
+        return getClass().getSimpleName();
     }
 }
