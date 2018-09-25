@@ -54,6 +54,8 @@ public class MyCommandHandler {
                     letter++;
             }
         }
+        bufferedReader.close();
+        fileReader.close();
         System.out.println("Lines: " + line + "\tWords: " + word + "\tLetters: " + letter);
     }
 
