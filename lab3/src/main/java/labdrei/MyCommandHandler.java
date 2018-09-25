@@ -3,16 +3,22 @@ package labdrei;
 import java.io.*;
 
 public class MyCommandHandler {
-    private final String[] args;
+    private String[] args;
     private File pwd;
 
-    public MyCommandHandler(String[] args) {
+    void setArgs(String[] args)
+    {
+        this.args = args;
+    }
+
+    MyCommandHandler(String[] args) {
         this.args = args;
         pwd = new File(System.getProperty("user.dir"));
     }
 
 
-    public void execute() throws IOException, NotEnoughParamsException {
+    void execute() throws IOException, NotEnoughParamsException {
+        if(args.length < 1) throw new NotEnoughParamsException();
         if(args[0].equals("exit"))
             exitProgram();
         else if(args[0].equals("reclist"))
@@ -51,16 +57,16 @@ public class MyCommandHandler {
         System.out.println("Lines: " + line + "\tWords: " + word + "\tLetters: " + letter);
     }
 
-    private void mkdir() throws NotEnoughParamsException {
+    private void mkdir() throws NotEnoughParamsException, IOException {
         if(args.length < 2) throw new NotEnoughParamsException();
         File f = new File(pwd.getAbsolutePath() + File.separator + args[1]);
-        f.mkdir();
+        if(!f.mkdir()) throw new IOException();
     }
 
     private void size() throws NotEnoughParamsException, IOException {
         if(args.length < 2) throw new NotEnoughParamsException();
         File f;
-        if(!(f = new File(args[2])).exists()) throw new IOException();
+        if(!(f = new File(args[1])).exists()) throw new IOException();
         System.out.println(f.length());
     }
 
