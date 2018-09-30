@@ -2,7 +2,9 @@ package lab4;
 
 import lab4.model.Bier;
 
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -38,6 +40,47 @@ public class LabVier {
                                 break;
                         }
                     beers.forEach(Bier::print);
+                    break;
+                case "save":
+                    if(tokens.length < 2)
+                        System.out.println("Please give the name for the file.");
+                    else {
+                        try {
+                            FileWriter fileWriter = new FileWriter(new File(tokens[1]));
+                            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+                            for (Bier bier : beers) {
+                                bufferedWriter.write(bier.toString() + "\n");
+                            }
+                            bufferedWriter.flush();
+                            bufferedWriter.close();
+                            fileWriter.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    break;
+                case "load":
+                    if(tokens.length < 2)
+                        System.out.println("Please give the name for the file.");
+                    else {
+                        try {
+                            FileReader fileReader = new FileReader(new File(tokens[1]));
+                            BufferedReader bufferedReader = new BufferedReader(fileReader);
+                            String fileLine;
+                            while((fileLine = bufferedReader.readLine()) != null)
+                            {
+                                tokens = fileLine.split(" ");
+                                if(tokens.length < 3)
+                                    System.out.println("Not enough parameters!");
+                                else
+                                    beers.add(new Bier(tokens[0], tokens[1], Double.parseDouble(tokens[2])));
+                            }
+                            bufferedReader.close();
+                            fileReader.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
                     break;
                 case "q":
                 case "Q":

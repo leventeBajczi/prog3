@@ -13,9 +13,14 @@ public class Bier{
         this.strength = strength;
     }
 
+    public String toString()
+    {
+        return (name + " " + type + " " + strength);
+    }
+
     public void print()
     {
-        System.out.println(name + " " + type + " " + strength);
+        System.out.println(toString());
     }
     public static class BierNameComparator implements Comparator<Bier>
     {
