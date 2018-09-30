@@ -23,6 +23,10 @@ public class Test {
         pQueue.push("String2");
         pQueue.push("String3");
         System.out.println("Size after: " + pQueue.size());
+        System.out.println("Listing them all out via a for loop...");
+        for(String s : pQueue)
+            System.out.println("\t" + s);
+
         System.out.println("Clearing the queue...");
         pQueue.clear();
         System.out.println("Size after: " + pQueue.size());

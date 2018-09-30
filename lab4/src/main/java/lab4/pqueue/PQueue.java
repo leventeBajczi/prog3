@@ -2,9 +2,11 @@ package lab4.pqueue;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.function.Consumer;
 
-public class PQueue<T extends Comparable> {
+public class PQueue<T extends Comparable> implements Iterable<T> {
     List<T> list;
     public PQueue()
     {
@@ -36,4 +38,10 @@ public class PQueue<T extends Comparable> {
     {
         list = new ArrayList<>();
     }
+
+    @Override
+    public Iterator iterator() {
+        return list.iterator();
+    }
+
 }
