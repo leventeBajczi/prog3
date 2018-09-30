@@ -24,6 +24,19 @@ public class LabVier {
                         beers.add(new Bier(tokens[1], tokens[2], Double.parseDouble(tokens[3])));
                     break;
                 case "list":
+                    if(tokens.length > 1)
+                        switch(tokens[1])
+                        {
+                            case "name":
+                                beers.sort(new Bier.BierNameComparator());
+                                break;
+                            case "type":
+                                beers.sort(new Bier.BierTypeComparator());
+                                break;
+                            case "strength":
+                                beers.sort(new Bier.BierStrengthComparator());
+                                break;
+                        }
                     beers.forEach(Bier::print);
                     break;
                 case "q":
