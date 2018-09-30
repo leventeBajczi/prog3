@@ -1,6 +1,7 @@
 package lab4;
 
 import lab4.model.Bier;
+import lab4.pqueue.Test;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -89,6 +90,9 @@ public class LabVier {
                         beers.sort(new Bier.BierNameComparator());
                         beers.remove(Collections.binarySearch(beers, new Bier(tokens[1], "", 0.0), new Bier.BierNameComparator()));
                     }
+                    break;
+                case "test":
+                    Test.main(null);
                     break;
                 case "q":
                 case "Q":
