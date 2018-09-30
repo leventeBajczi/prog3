@@ -82,6 +82,14 @@ public class LabVier {
                         }
                     }
                     break;
+                case "delete":
+                    if(tokens.length < 2)
+                        System.out.println("Please specify what I should delete");
+                    else {
+                        beers.sort(new Bier.BierNameComparator());
+                        beers.remove(Collections.binarySearch(beers, new Bier(tokens[1], "", 0.0), new Bier.BierNameComparator()));
+                    }
+                    break;
                 case "q":
                 case "Q":
                 case "quit":
