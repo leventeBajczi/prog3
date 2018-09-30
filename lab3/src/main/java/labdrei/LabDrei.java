@@ -8,7 +8,7 @@ import java.util.zip.GZIPOutputStream;
 public class LabDrei {
 
     public static void main(String[] args) {
-        //task1(args);
+        task1(args);
         //task2(args);
         //task3(args);
     }
