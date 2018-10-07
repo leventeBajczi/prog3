@@ -23,6 +23,7 @@ public class Fifo {
 
     public String get()
     {
+        System.out.println("get " + Thread.currentThread().getId());
         mutex.lock();
         while(als.size() == 0) {
             try {
@@ -47,6 +48,7 @@ public class Fifo {
             toPut = msg;
         }
         public void run() {
+            System.out.println("put " + Thread.currentThread().getId());
             mutex.lock();
             while(als.size() == MAX_SIZE) {
                 try {
