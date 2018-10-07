@@ -1,11 +1,13 @@
 package lab5.aufgabe2;
 
+import lab5.aufgabe3.Fifo;
+
 public class Producer extends Thread {
 
     private int cnt;
     private final String msg;
 
-    public Producer(String msg)
+    public Producer(String msg, Fifo fifo)
     {
         this.msg = msg;
         cnt = 0;
