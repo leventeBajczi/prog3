@@ -23,14 +23,16 @@ public class Fifo {
 
     public String get()
     {
+        mutex.lock();
         while(als.size() == 0) {
             try {
+                mutex.unlock();
                 Thread.sleep(100);
+                mutex.lock();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        mutex.lock();
         String readString = als.get(als.size()-1);
         als.remove(als.size()-1);
         mutex.unlock();
@@ -45,14 +47,16 @@ public class Fifo {
             toPut = msg;
         }
         public void run() {
+            mutex.lock();
             while(als.size() == MAX_SIZE) {
                 try {
+                    mutex.unlock();
                     Thread.sleep(100);
+                    mutex.lock();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
-            mutex.lock();
             als.add(0, toPut);
             mutex.unlock();
         }
