@@ -6,7 +6,7 @@ public class Producer extends Thread {
     private final String msg;
     private final Fifo fifo;
 
-    public Producer(String msg, Fifo fifo)
+    public Producer(String msg, Fifo fifo, Integer sl)
     {
         this.fifo = fifo;
         this.msg = msg;

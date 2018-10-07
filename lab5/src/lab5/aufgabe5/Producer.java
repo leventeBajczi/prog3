@@ -1,4 +1,4 @@
-package lab5.aufgabe2;
+package lab5.aufgabe5;
 
 import lab5.aufgabe3.Fifo;
 
@@ -6,9 +6,13 @@ public class Producer extends Thread {
 
     private int cnt;
     private final String msg;
+    private final Fifo fifo;
+    private final Integer sl;
 
     public Producer(String msg, Fifo fifo, Integer sl)
     {
+        this.sl = sl;
+        this.fifo = fifo;
         this.msg = msg;
         cnt = 0;
     }
@@ -16,9 +20,10 @@ public class Producer extends Thread {
     public void run() {
         for(;;)
         {
-            System.out.println(msg + "\t" + cnt++ + "\t" + System.currentTimeMillis() % 100000);
+            fifo.put(msg + "\t" + cnt);
+            System.out.println("produced " + msg + "\t" + cnt++ + "\t" + System.currentTimeMillis() % 100000);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(sl);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

@@ -7,7 +7,7 @@ public class Producer {
     private int cnt;
     private final String msg;
 
-    public Producer(String msg, Fifo fifo)
+    public Producer(String msg, Fifo fifo, Integer sl)
     {
         this.msg = msg;
         cnt = 0;

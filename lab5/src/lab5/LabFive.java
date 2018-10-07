@@ -2,7 +2,8 @@ package lab5;
 
 //import lab5.aufgabe1.Producer;
 //import lab5.aufgabe2.Producer;
-import lab5.aufgabe3.Producer;
+//import lab5.aufgabe3.Producer;
+import lab5.aufgabe5.Producer;
 import lab5.aufgabe3.Fifo;
 import lab5.aufgabe4.Consumer;
 
@@ -25,14 +26,14 @@ public class LabFive {
         Fifo fifo = new Fifo();
         Consumer consumer = new Consumer(fifo, "", 500);
         consumer.start();
-        Producer p = new Producer("demo", fifo);
+        Producer p = new Producer("demo", fifo, 100);
         p.start();
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        p = new Producer("demo2", fifo);
+        p = new Producer("demo2", fifo, 700);
         p.start();
     }
 }
