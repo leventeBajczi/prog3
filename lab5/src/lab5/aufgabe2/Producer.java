@@ -1,6 +1,6 @@
-package lab5.aufgabe1;
+package lab5.aufgabe2;
 
-public class Producer {
+public class Producer extends Thread {
 
     private int cnt;
     private final String msg;
@@ -11,7 +11,7 @@ public class Producer {
         cnt = 0;
     }
 
-    public void start(){
+    public void run() {
         for(;;)
         {
             System.out.println(msg + "\t" + cnt++ + "\t" + System.currentTimeMillis() % 100000);
@@ -21,5 +21,6 @@ public class Producer {
                 e.printStackTrace();
             }
         }
+
     }
 }
