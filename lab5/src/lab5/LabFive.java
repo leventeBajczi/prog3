@@ -4,12 +4,13 @@ package lab5;
 //import lab5.aufgabe2.Producer;
 import lab5.aufgabe3.Producer;
 import lab5.aufgabe3.Fifo;
+import lab5.aufgabe4.Consumer;
 
 public class LabFive {
 
     public static void main(String[] args) {
         aufgabe3();
-        aufgabe12();
+        aufgabe();
     }
 
     private static void aufgabe3() {
@@ -19,9 +20,11 @@ public class LabFive {
 
     }
 
-    private static void aufgabe12()
+    private static void aufgabe()
     {
         Fifo fifo = new Fifo();
+        Consumer consumer = new Consumer(fifo, "", 500);
+        consumer.start();
         Producer p = new Producer("demo", fifo);
         p.start();
         try {
