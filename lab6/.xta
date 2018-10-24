@@ -1,0 +1,69 @@
+int var_mutex;
+
+chan mutex, condition, main_irstThread, main_econdThread, irstThread, econdThread, main_ain;
+
+
+process firstThread() {
+clock x;
+state
+  firstThread_in,
+  firstThread_start,
+  mtx_lock_0,
+  relaxed_load_global_13,
+  relaxed_store_global_14,
+  mtx_unlock_1,
+  final;
+init firstThread_in;
+trans
+  firstThread_in  ->  firstThread_start{ sync irstThread?; },
+  firstThread_start  ->  mtx_lock_0{ guard var_mutex == 0; assign var_mutex = var_mutex + 1; },
+  mtx_lock_0  ->  relaxed_load_global_13{ },
+  relaxed_load_global_13  ->  relaxed_store_global_14{ },
+  relaxed_store_global_14  ->  mtx_unlock_1{ assign var_mutex = var_mutex - 1; },
+  mtx_unlock_1  ->  final{ sync main_irstThread!; };
+}
+
+process main() {
+clock x;
+state
+  main_in,
+  relaxed_store_global_39,
+  thrd_create_6,
+  thrd_create_7,
+  thrd_join_8,
+  thrd_join_9,
+  final;
+init main_in;
+trans
+  main_in  ->  relaxed_store_global_39{ assign var_mutex = 0; },
+  relaxed_store_global_39  ->  thrd_create_6{ sync irstThread!; },
+  thrd_create_6  ->  thrd_create_7{ sync econdThread!; },
+  thrd_create_7  ->  thrd_join_8{ sync main_econdThread?; },
+  thrd_join_8  ->  thrd_join_9{ sync main_irstThread?; },
+  thrd_join_9  ->  final{ sync main_ain!; };
+}
+
+process secondThread() {
+clock x;
+state
+  secondThread_in,
+  secondThread_start,
+  mtx_lock_2,
+  relaxed_store_global_24,
+  mtx_unlock_3,
+  mtx_lock_4,
+  relaxed_load_global_28,
+  mtx_unlock_5,
+  final;
+init secondThread_in;
+trans
+  secondThread_in  ->  secondThread_start{ sync econdThread?; },
+  secondThread_start  ->  mtx_lock_2{ guard var_mutex == 0; assign var_mutex = var_mutex + 1; },
+  mtx_lock_2  ->  relaxed_store_global_24{ },
+  relaxed_store_global_24  ->  mtx_unlock_3{ assign var_mutex = var_mutex - 1; },
+  mtx_unlock_3  ->  mtx_lock_4{ guard var_mutex == 0; assign var_mutex = var_mutex + 1; },
+  mtx_lock_4  ->  relaxed_load_global_28{ },
+  relaxed_load_global_28  ->  mtx_unlock_5{ assign var_mutex = var_mutex - 1; },
+  mtx_unlock_5  ->  final{ sync main_econdThread!; };
+}
+system firstThread, main, secondThread; 

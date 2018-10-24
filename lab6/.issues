@@ -1,0 +1,350 @@
+issue tricheck_0 { seq_cst store : seq_cst load : seq_cst load } 
+
+issue tricheck_1 { acquire load : release store } 
+
+issue tricheck_2 { seq_cst store : relaxed load : relaxed load } 
+
+issue tricheck_3 { acquire load : seq_cst store } 
+
+issue tricheck_4 { relaxed store : seq_cst load : acquire load } 
+
+issue tricheck_5 { acquire load : seq_cst store } 
+
+issue tricheck_6 { release store : relaxed load : relaxed load } 
+
+issue tricheck_7 { acquire load : release store } 
+
+issue tricheck_8 { seq_cst store : seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_9 { release store : relaxed load : seq_cst load } 
+
+issue tricheck_10 { acquire load : seq_cst store } 
+
+issue tricheck_11 { release store : acquire load : seq_cst load } 
+
+issue tricheck_12 { acquire load : seq_cst store } 
+
+issue tricheck_13 { release store : relaxed store : acquire load : acquire load } 
+
+issue tricheck_14 { release store : seq_cst store : acquire load : relaxed load } 
+
+issue tricheck_15 { release store : seq_cst load : seq_cst load } 
+
+issue tricheck_16 { acquire load : release store } 
+
+issue tricheck_17 { release store : acquire load : acquire load } 
+
+issue tricheck_18 { acquire load : seq_cst store } 
+
+issue tricheck_19 { relaxed store : seq_cst load : relaxed load } 
+
+issue tricheck_20 { acquire load : release store } 
+
+issue tricheck_21 { seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_22 { seq_cst store : seq_cst load : seq_cst load } 
+
+issue tricheck_23 { relaxed store : acquire load } 
+
+issue tricheck_24 { release store : acquire load } 
+
+issue tricheck_25 { seq_cst store : seq_cst load : seq_cst load } 
+
+issue tricheck_26 { acquire load : seq_cst store } 
+
+issue tricheck_27 { seq_cst store : acquire load : acquire load } 
+
+issue tricheck_28 { acquire load : release store } 
+
+issue tricheck_29 { seq_cst store : acquire load } 
+
+issue tricheck_30 { release store : acquire load } 
+
+issue tricheck_31 { relaxed store : acquire load : seq_cst load } 
+
+issue tricheck_32 { acquire load : release store } 
+
+issue tricheck_33 { release store : seq_cst load : relaxed load } 
+
+issue tricheck_34 { acquire load : release store } 
+
+issue tricheck_35 { seq_cst store : relaxed load } 
+
+issue tricheck_36 { seq_cst store : acquire load } 
+
+issue tricheck_37 { seq_cst store : seq_cst load : relaxed load } 
+
+issue tricheck_38 { acquire load : release store } 
+
+issue tricheck_39 { release store : release store : acquire load : seq_cst load } 
+
+issue tricheck_40 { relaxed store : seq_cst load : seq_cst load } 
+
+issue tricheck_41 { acquire load : seq_cst store } 
+
+issue tricheck_42 { seq_cst store : seq_cst load : acquire load } 
+
+issue tricheck_43 { acquire load : seq_cst store } 
+
+issue tricheck_44 { release store : relaxed load : seq_cst load } 
+
+issue tricheck_45 { acquire load : release store } 
+
+issue tricheck_46 { seq_cst store : seq_cst load } 
+
+issue tricheck_47 { release store : acquire load } 
+
+issue tricheck_48 { release store : seq_cst load : seq_cst load } 
+
+issue tricheck_49 { acquire load : seq_cst store } 
+
+issue tricheck_50 { release store : acquire load : relaxed load } 
+
+issue tricheck_51 { acquire load : release store } 
+
+issue tricheck_52 { release store : seq_cst load : acquire load } 
+
+issue tricheck_53 { acquire load : release store } 
+
+issue tricheck_54 { release store : acquire load } 
+
+issue tricheck_55 { seq_cst store : acquire load } 
+
+issue tricheck_56 { release store : relaxed load : acquire load } 
+
+issue tricheck_57 { acquire load : release store } 
+
+issue tricheck_58 { release store : seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_59 { release store : seq_cst store : acquire load : acquire load } 
+
+issue tricheck_60 { relaxed store : relaxed load : relaxed load } 
+
+issue tricheck_61 { acquire load : release store } 
+
+issue tricheck_62 { seq_cst store : acquire load } 
+
+issue tricheck_63 { seq_cst store : acquire load } 
+
+issue tricheck_64 { relaxed store : seq_cst store : acquire load : relaxed load } 
+
+issue tricheck_65 { seq_cst store : acquire load : relaxed load } 
+
+issue tricheck_66 { acquire load : seq_cst store } 
+
+issue tricheck_67 { relaxed store : relaxed store : acquire load : relaxed load } 
+
+issue tricheck_68 { relaxed store : acquire load : acquire load } 
+
+issue tricheck_69 { acquire load : release store } 
+
+issue tricheck_70 { release store : seq_cst load : relaxed load } 
+
+issue tricheck_71 { acquire load : seq_cst store } 
+
+issue tricheck_72 { release store : relaxed load : acquire load } 
+
+issue tricheck_73 { acquire load : seq_cst store } 
+
+issue tricheck_74 { relaxed store : acquire load : seq_cst load } 
+
+issue tricheck_75 { acquire load : seq_cst store } 
+
+issue tricheck_76 { relaxed store : release store : acquire load : relaxed load } 
+
+issue tricheck_77 { seq_cst store : relaxed store : acquire load : seq_cst load } 
+
+issue tricheck_78 { release store : seq_cst load } 
+
+issue tricheck_79 { seq_cst store : acquire load } 
+
+issue tricheck_80 { seq_cst store : release store : acquire load : relaxed load } 
+
+issue tricheck_81 { seq_cst store : relaxed load : seq_cst load } 
+
+issue tricheck_82 { acquire load : release store } 
+
+issue tricheck_83 { seq_cst store : relaxed load : relaxed load } 
+
+issue tricheck_84 { acquire load : release store } 
+
+issue tricheck_85 { relaxed store : seq_cst load : acquire load } 
+
+issue tricheck_86 { acquire load : release store } 
+
+issue tricheck_87 { release store : release store : acquire load : relaxed load } 
+
+issue tricheck_88 { release store : relaxed load : relaxed load } 
+
+issue tricheck_89 { acquire load : seq_cst store } 
+
+issue tricheck_90 { relaxed store : seq_cst load } 
+
+issue tricheck_91 { release store : acquire load } 
+
+issue tricheck_92 { relaxed store : seq_cst load : relaxed load } 
+
+issue tricheck_93 { acquire load : seq_cst store } 
+
+issue tricheck_94 { relaxed store : seq_cst load } 
+
+issue tricheck_95 { seq_cst store : acquire load } 
+
+issue tricheck_96 { seq_cst store : relaxed store : acquire load : relaxed load } 
+
+issue tricheck_97 { seq_cst store : seq_cst store : acquire load : relaxed load } 
+
+issue tricheck_98 { release store : release store : acquire load : acquire load } 
+
+issue tricheck_99 { relaxed store : acquire load : relaxed load } 
+
+issue tricheck_100 { acquire load : release store } 
+
+issue tricheck_101 { seq_cst store : release store : acquire load : seq_cst load } 
+
+issue tricheck_102 { release store : acquire load : seq_cst load } 
+
+issue tricheck_103 { acquire load : release store } 
+
+issue tricheck_104 { seq_cst store : seq_cst load : acquire load } 
+
+issue tricheck_105 { acquire load : release store } 
+
+issue tricheck_106 { seq_cst store : seq_cst store : acquire load : acquire load } 
+
+issue tricheck_107 { seq_cst store : acquire load : relaxed load } 
+
+issue tricheck_108 { acquire load : release store } 
+
+issue tricheck_109 { seq_cst store : acquire load : acquire load } 
+
+issue tricheck_110 { acquire load : seq_cst store } 
+
+issue tricheck_111 { release store : seq_cst load } 
+
+issue tricheck_112 { release store : acquire load } 
+
+issue tricheck_113 { relaxed store : relaxed load } 
+
+issue tricheck_114 { seq_cst store : acquire load } 
+
+issue tricheck_115 { relaxed store : seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_116 { seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_117 { acquire load : release store } 
+
+issue tricheck_118 { relaxed store : relaxed load : acquire load } 
+
+issue tricheck_119 { acquire load : seq_cst store } 
+
+issue tricheck_120 { relaxed store : release store : acquire load : acquire load } 
+
+issue tricheck_121 { seq_cst store : relaxed load } 
+
+issue tricheck_122 { release store : acquire load } 
+
+issue tricheck_123 { relaxed store : relaxed store : acquire load : acquire load } 
+
+issue tricheck_124 { relaxed store : relaxed load : acquire load } 
+
+issue tricheck_125 { acquire load : release store } 
+
+issue tricheck_126 { release store : acquire load : relaxed load } 
+
+issue tricheck_127 { acquire load : seq_cst store } 
+
+issue tricheck_128 { release store : relaxed store : acquire load : seq_cst load } 
+
+issue tricheck_129 { seq_cst store : relaxed load : acquire load } 
+
+issue tricheck_130 { acquire load : seq_cst store } 
+
+issue tricheck_131 { relaxed store : relaxed store : acquire load : seq_cst load } 
+
+issue tricheck_132 { seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_133 { acquire load : seq_cst store } 
+
+issue tricheck_134 { seq_cst store : seq_cst load : relaxed load } 
+
+issue tricheck_135 { acquire load : seq_cst store } 
+
+issue tricheck_136 { relaxed store : seq_cst store : acquire load : acquire load } 
+
+issue tricheck_137 { relaxed store : release store : acquire load : seq_cst load } 
+
+issue tricheck_138 { relaxed store : seq_cst load : seq_cst load } 
+
+issue tricheck_139 { acquire load : release store } 
+
+issue tricheck_140 { relaxed store : relaxed load } 
+
+issue tricheck_141 { release store : acquire load } 
+
+issue tricheck_142 { release store : relaxed load } 
+
+issue tricheck_143 { release store : acquire load } 
+
+issue tricheck_144 { seq_cst store : release store : acquire load : acquire load } 
+
+issue tricheck_145 { release store : acquire load } 
+
+issue tricheck_146 { release store : acquire load } 
+
+issue tricheck_147 { seq_cst store : relaxed load : seq_cst load } 
+
+issue tricheck_148 { acquire load : seq_cst store } 
+
+issue tricheck_149 { relaxed store : relaxed load : relaxed load } 
+
+issue tricheck_150 { acquire load : seq_cst store } 
+
+issue tricheck_151 { seq_cst store : seq_cst load } 
+
+issue tricheck_152 { seq_cst store : acquire load } 
+
+issue tricheck_153 { release store : acquire load : acquire load } 
+
+issue tricheck_154 { acquire load : release store } 
+
+issue tricheck_155 { release store : relaxed store : acquire load : relaxed load } 
+
+issue tricheck_156 { relaxed store : acquire load } 
+
+issue tricheck_157 { seq_cst store : acquire load } 
+
+issue tricheck_158 { seq_cst store : relaxed store : acquire load : acquire load } 
+
+issue tricheck_159 { relaxed store : relaxed load : seq_cst load } 
+
+issue tricheck_160 { acquire load : seq_cst store } 
+
+issue tricheck_161 { release store : seq_cst load : acquire load } 
+
+issue tricheck_162 { acquire load : seq_cst store } 
+
+issue tricheck_163 { seq_cst store : acquire load : seq_cst load } 
+
+issue tricheck_164 { seq_cst store : seq_cst load : acquire load } 
+
+issue tricheck_165 { relaxed store : relaxed load : seq_cst load } 
+
+issue tricheck_166 { acquire load : release store } 
+
+issue tricheck_167 { relaxed store : acquire load : acquire load } 
+
+issue tricheck_168 { acquire load : seq_cst store } 
+
+issue tricheck_169 { relaxed store : acquire load : relaxed load } 
+
+issue tricheck_170 { acquire load : seq_cst store } 
+
+issue tricheck_171 { seq_cst store : relaxed load : acquire load } 
+
+issue tricheck_172 { acquire load : release store } 
+
+issue tricheck_173 { release store : relaxed load } 
+
+issue tricheck_174 { seq_cst store : acquire load } 
+
