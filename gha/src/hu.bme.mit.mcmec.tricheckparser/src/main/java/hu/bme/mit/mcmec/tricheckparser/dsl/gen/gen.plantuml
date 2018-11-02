@@ -1,0 +1,440 @@
+@startuml
+
+title __GEN's Class Diagram__\n
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class TriCheckLitmusBaseListener {
+          + enterLitmus()
+          + exitLitmus()
+          + enterPreliminary()
+          + exitPreliminary()
+          + enterVariables()
+          + exitVariables()
+          + enterThreads()
+          + exitThreads()
+          + enterCondition()
+          + exitCondition()
+          + enterAssignment()
+          + exitAssignment()
+          + enterThread()
+          + exitThread()
+          + enterLine()
+          + exitLine()
+          + enterEveryRule()
+          + exitEveryRule()
+          + visitTerminal()
+          + visitErrorNode()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class TriCheckLitmusBaseVisitor {
+          + visitLitmus()
+          + visitPreliminary()
+          + visitVariables()
+          + visitThreads()
+          + visitCondition()
+          + visitAssignment()
+          + visitThread()
+          + visitLine()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class TriCheckLitmusLexer {
+          {static} # _decisionToDFA : DFA[]
+          {static} # _sharedContextCache : PredictionContextCache
+          {static} + LINE_COMMENT : int
+          {static} + NUMBERS : int
+          {static} + COMMA : int
+          {static} + LCURLY : int
+          {static} + RCURLY : int
+          {static} + LBRACKET : int
+          {static} + RBRACKET : int
+          {static} + LBRACE : int
+          {static} + RBRACE : int
+          {static} + SEMICOLON : int
+          {static} + ASSIGN : int
+          {static} + LOAD : int
+          {static} + STORE : int
+          {static} + MO : int
+          {static} + EXISTS : int
+          {static} + RELEASE : int
+          {static} + RELAXED : int
+          {static} + ACQUIRE : int
+          {static} + SEQ_CST : int
+          {static} + RICHTEXT : int
+          {static} + RICHER : int
+          {static} + WHITESPACE : int
+          {static} + NEWLINE : int
+          {static} + modeNames : String[]
+          {static} + ruleNames : String[]
+          {static} - _LITERAL_NAMES : String[]
+          {static} - _SYMBOLIC_NAMES : String[]
+          {static} + VOCABULARY : Vocabulary
+          {static} + tokenNames : String[]
+          {static} + _serializedATN : String
+          {static} + _ATN : ATN
+          + getTokenNames()
+          + getVocabulary()
+          + TriCheckLitmusLexer()
+          + getGrammarFileName()
+          + getRuleNames()
+          + getSerializedATN()
+          + getModeNames()
+          + getATN()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      interface TriCheckLitmusListener {
+          {abstract} + enterLitmus()
+          {abstract} + exitLitmus()
+          {abstract} + enterPreliminary()
+          {abstract} + exitPreliminary()
+          {abstract} + enterVariables()
+          {abstract} + exitVariables()
+          {abstract} + enterThreads()
+          {abstract} + exitThreads()
+          {abstract} + enterCondition()
+          {abstract} + exitCondition()
+          {abstract} + enterAssignment()
+          {abstract} + exitAssignment()
+          {abstract} + enterThread()
+          {abstract} + exitThread()
+          {abstract} + enterLine()
+          {abstract} + exitLine()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class TriCheckLitmusParser {
+          {static} # _decisionToDFA : DFA[]
+          {static} # _sharedContextCache : PredictionContextCache
+          {static} + LINE_COMMENT : int
+          {static} + NUMBERS : int
+          {static} + COMMA : int
+          {static} + LCURLY : int
+          {static} + RCURLY : int
+          {static} + LBRACKET : int
+          {static} + RBRACKET : int
+          {static} + LBRACE : int
+          {static} + RBRACE : int
+          {static} + SEMICOLON : int
+          {static} + ASSIGN : int
+          {static} + LOAD : int
+          {static} + STORE : int
+          {static} + MO : int
+          {static} + EXISTS : int
+          {static} + RELEASE : int
+          {static} + RELAXED : int
+          {static} + ACQUIRE : int
+          {static} + SEQ_CST : int
+          {static} + RICHTEXT : int
+          {static} + RICHER : int
+          {static} + WHITESPACE : int
+          {static} + NEWLINE : int
+          {static} + RULE_litmus : int
+          {static} + RULE_preliminary : int
+          {static} + RULE_variables : int
+          {static} + RULE_threads : int
+          {static} + RULE_condition : int
+          {static} + RULE_assignment : int
+          {static} + RULE_thread : int
+          {static} + RULE_line : int
+          {static} + ruleNames : String[]
+          {static} - _LITERAL_NAMES : String[]
+          {static} - _SYMBOLIC_NAMES : String[]
+          {static} + VOCABULARY : Vocabulary
+          {static} + tokenNames : String[]
+          {static} + _serializedATN : String
+          {static} + _ATN : ATN
+          + getTokenNames()
+          + getVocabulary()
+          + getGrammarFileName()
+          + getRuleNames()
+          + getSerializedATN()
+          + getATN()
+          + TriCheckLitmusParser()
+          + litmus()
+          + preliminary()
+          + variables()
+          + threads()
+          + condition()
+          + assignment()
+          + thread()
+          + line()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class LitmusContext {
+          + preliminary()
+          + variables()
+          + threads()
+          + condition()
+          + EOF()
+          + LitmusContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class PreliminaryContext {
+          + NEWLINE()
+          + NEWLINE()
+          + RICHTEXT()
+          + RICHTEXT()
+          + WHITESPACE()
+          + WHITESPACE()
+          + PreliminaryContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class VariablesContext {
+          + LCURLY()
+          + RCURLY()
+          + assignment()
+          + assignment()
+          + SEMICOLON()
+          + SEMICOLON()
+          + NEWLINE()
+          + NEWLINE()
+          + WHITESPACE()
+          + WHITESPACE()
+          + VariablesContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class ThreadsContext {
+          + thread()
+          + thread()
+          + NEWLINE()
+          + NEWLINE()
+          + WHITESPACE()
+          + WHITESPACE()
+          + ThreadsContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class ConditionContext {
+          + EXISTS()
+          + LBRACE()
+          + RBRACE()
+          + NEWLINE()
+          + NEWLINE()
+          + WHITESPACE()
+          + WHITESPACE()
+          + RICHER()
+          + RICHER()
+          + RICHTEXT()
+          + RICHTEXT()
+          + NUMBERS()
+          + NUMBERS()
+          + ASSIGN()
+          + ASSIGN()
+          + ConditionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class AssignmentContext {
+          + LBRACKET()
+          + RICHTEXT()
+          + RBRACKET()
+          + NUMBERS()
+          + WHITESPACE()
+          + WHITESPACE()
+          + NEWLINE()
+          + NEWLINE()
+          + AssignmentContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class ThreadContext {
+          + RICHTEXT()
+          + RICHTEXT()
+          + LBRACE()
+          + RBRACE()
+          + LCURLY()
+          + RCURLY()
+          + line()
+          + line()
+          + NEWLINE()
+          + NEWLINE()
+          + WHITESPACE()
+          + WHITESPACE()
+          + COMMA()
+          + COMMA()
+          + ThreadContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      class LineContext {
+          + LBRACE()
+          + RICHTEXT()
+          + RICHTEXT()
+          + COMMA()
+          + COMMA()
+          + RBRACE()
+          + SEMICOLON()
+          + LOAD()
+          + STORE()
+          + RELAXED()
+          + RELEASE()
+          + ACQUIRE()
+          + SEQ_CST()
+          + NUMBERS()
+          + WHITESPACE()
+          + WHITESPACE()
+          + NEWLINE()
+          + NEWLINE()
+          + LineContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  class TrimToSizeListener {
+      {static} + INSTANCE : TrimToSizeListener
+      + TrimToSizeListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  class TraceListener {
+      + TraceListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  package hu.bme.mit.mcmec.tricheckparser.dsl {
+    package hu.bme.mit.mcmec.tricheckparser.dsl.gen {
+      interface TriCheckLitmusVisitor {
+          {abstract} + visitLitmus()
+          {abstract} + visitPreliminary()
+          {abstract} + visitVariables()
+          {abstract} + visitThreads()
+          {abstract} + visitCondition()
+          {abstract} + visitAssignment()
+          {abstract} + visitThread()
+          {abstract} + visitLine()
+      }
+    }
+  }
+  
+
+  TriCheckLitmusBaseListener -up-|> TriCheckLitmusListener
+  TriCheckLitmusBaseVisitor -up-|> TriCheckLitmusVisitor
+  TriCheckLitmusBaseVisitor -up-|> AbstractParseTreeVisitor
+  TriCheckLitmusLexer -up-|> Lexer
+  TriCheckLitmusParser -up-|> Parser
+  TriCheckLitmusParser +-down- LitmusContext
+  TriCheckLitmusParser +-down- PreliminaryContext
+  TriCheckLitmusParser +-down- VariablesContext
+  TriCheckLitmusParser +-down- ThreadsContext
+  TriCheckLitmusParser +-down- ConditionContext
+  TriCheckLitmusParser +-down- AssignmentContext
+  TriCheckLitmusParser +-down- ThreadContext
+  TriCheckLitmusParser +-down- LineContext
+  TriCheckLitmusParser +-down- TrimToSizeListener
+  TriCheckLitmusParser +-down- TraceListener
+  LitmusContext -up-|> ParserRuleContext
+  PreliminaryContext -up-|> ParserRuleContext
+  VariablesContext -up-|> ParserRuleContext
+  ThreadsContext -up-|> ParserRuleContext
+  ConditionContext -up-|> ParserRuleContext
+  AssignmentContext -up-|> ParserRuleContext
+  ThreadContext -up-|> ParserRuleContext
+  LineContext -up-|> ParserRuleContext
+  TrimToSizeListener -up-|> ParseTreeListener
+  TraceListener -up-|> ParseTreeListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

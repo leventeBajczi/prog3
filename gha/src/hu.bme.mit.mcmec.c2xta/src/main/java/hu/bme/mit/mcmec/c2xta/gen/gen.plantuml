@@ -1,0 +1,2653 @@
+@startuml
+
+title __GEN's Class Diagram__\n
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CBaseListener {
+          + enterPrimaryExpression()
+          + exitPrimaryExpression()
+          + enterGenericSelection()
+          + exitGenericSelection()
+          + enterGenericAssocList()
+          + exitGenericAssocList()
+          + enterGenericAssociation()
+          + exitGenericAssociation()
+          + enterPostfixExpression()
+          + exitPostfixExpression()
+          + enterArgumentExpressionList()
+          + exitArgumentExpressionList()
+          + enterUnaryExpression()
+          + exitUnaryExpression()
+          + enterUnaryOperator()
+          + exitUnaryOperator()
+          + enterCastExpression()
+          + exitCastExpression()
+          + enterMultiplicativeExpression()
+          + exitMultiplicativeExpression()
+          + enterAdditiveExpression()
+          + exitAdditiveExpression()
+          + enterShiftExpression()
+          + exitShiftExpression()
+          + enterRelationalExpression()
+          + exitRelationalExpression()
+          + enterEqualityExpression()
+          + exitEqualityExpression()
+          + enterAndExpression()
+          + exitAndExpression()
+          + enterExclusiveOrExpression()
+          + exitExclusiveOrExpression()
+          + enterInclusiveOrExpression()
+          + exitInclusiveOrExpression()
+          + enterLogicalAndExpression()
+          + exitLogicalAndExpression()
+          + enterLogicalOrExpression()
+          + exitLogicalOrExpression()
+          + enterConditionalExpression()
+          + exitConditionalExpression()
+          + enterAssignmentExpression()
+          + exitAssignmentExpression()
+          + enterAssignmentOperator()
+          + exitAssignmentOperator()
+          + enterExpression()
+          + exitExpression()
+          + enterConstantExpression()
+          + exitConstantExpression()
+          + enterDeclaration()
+          + exitDeclaration()
+          + enterDeclarationSpecifiers()
+          + exitDeclarationSpecifiers()
+          + enterDeclarationSpecifiers2()
+          + exitDeclarationSpecifiers2()
+          + enterDeclarationSpecifier()
+          + exitDeclarationSpecifier()
+          + enterInitDeclaratorList()
+          + exitInitDeclaratorList()
+          + enterInitDeclarator()
+          + exitInitDeclarator()
+          + enterStorageClassSpecifier()
+          + exitStorageClassSpecifier()
+          + enterTypeSpecifier()
+          + exitTypeSpecifier()
+          + enterStructOrUnionSpecifier()
+          + exitStructOrUnionSpecifier()
+          + enterStructOrUnion()
+          + exitStructOrUnion()
+          + enterStructDeclarationList()
+          + exitStructDeclarationList()
+          + enterStructDeclaration()
+          + exitStructDeclaration()
+          + enterSpecifierQualifierList()
+          + exitSpecifierQualifierList()
+          + enterStructDeclaratorList()
+          + exitStructDeclaratorList()
+          + enterStructDeclarator()
+          + exitStructDeclarator()
+          + enterEnumSpecifier()
+          + exitEnumSpecifier()
+          + enterEnumeratorList()
+          + exitEnumeratorList()
+          + enterEnumerator()
+          + exitEnumerator()
+          + enterEnumerationConstant()
+          + exitEnumerationConstant()
+          + enterAtomicTypeSpecifier()
+          + exitAtomicTypeSpecifier()
+          + enterTypeQualifier()
+          + exitTypeQualifier()
+          + enterFunctionSpecifier()
+          + exitFunctionSpecifier()
+          + enterAlignmentSpecifier()
+          + exitAlignmentSpecifier()
+          + enterDeclarator()
+          + exitDeclarator()
+          + enterDirectDeclarator()
+          + exitDirectDeclarator()
+          + enterGccDeclaratorExtension()
+          + exitGccDeclaratorExtension()
+          + enterGccAttributeSpecifier()
+          + exitGccAttributeSpecifier()
+          + enterGccAttributeList()
+          + exitGccAttributeList()
+          + enterGccAttribute()
+          + exitGccAttribute()
+          + enterNestedParenthesesBlock()
+          + exitNestedParenthesesBlock()
+          + enterPointer()
+          + exitPointer()
+          + enterTypeQualifierList()
+          + exitTypeQualifierList()
+          + enterParameterTypeList()
+          + exitParameterTypeList()
+          + enterParameterList()
+          + exitParameterList()
+          + enterParameterDeclaration()
+          + exitParameterDeclaration()
+          + enterIdentifierList()
+          + exitIdentifierList()
+          + enterTypeName()
+          + exitTypeName()
+          + enterAbstractDeclarator()
+          + exitAbstractDeclarator()
+          + enterDirectAbstractDeclarator()
+          + exitDirectAbstractDeclarator()
+          + enterTypedefName()
+          + exitTypedefName()
+          + enterInitializer()
+          + exitInitializer()
+          + enterInitializerList()
+          + exitInitializerList()
+          + enterDesignation()
+          + exitDesignation()
+          + enterDesignatorList()
+          + exitDesignatorList()
+          + enterDesignator()
+          + exitDesignator()
+          + enterStaticAssertDeclaration()
+          + exitStaticAssertDeclaration()
+          + enterStatement()
+          + exitStatement()
+          + enterLabeledStatement()
+          + exitLabeledStatement()
+          + enterCompoundStatement()
+          + exitCompoundStatement()
+          + enterBlockItemList()
+          + exitBlockItemList()
+          + enterBlockItem()
+          + exitBlockItem()
+          + enterExpressionStatement()
+          + exitExpressionStatement()
+          + enterSelectionStatement()
+          + exitSelectionStatement()
+          + enterIterationStatement()
+          + exitIterationStatement()
+          + enterForCondition()
+          + exitForCondition()
+          + enterForDeclaration()
+          + exitForDeclaration()
+          + enterForExpression()
+          + exitForExpression()
+          + enterJumpStatement()
+          + exitJumpStatement()
+          + enterCompilationUnit()
+          + exitCompilationUnit()
+          + enterTranslationUnit()
+          + exitTranslationUnit()
+          + enterExternalDeclaration()
+          + exitExternalDeclaration()
+          + enterFunctionDefinition()
+          + exitFunctionDefinition()
+          + enterDeclarationList()
+          + exitDeclarationList()
+          + enterEveryRule()
+          + exitEveryRule()
+          + visitTerminal()
+          + visitErrorNode()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CBaseVisitor {
+          + visitPrimaryExpression()
+          + visitGenericSelection()
+          + visitGenericAssocList()
+          + visitGenericAssociation()
+          + visitPostfixExpression()
+          + visitArgumentExpressionList()
+          + visitUnaryExpression()
+          + visitUnaryOperator()
+          + visitCastExpression()
+          + visitMultiplicativeExpression()
+          + visitAdditiveExpression()
+          + visitShiftExpression()
+          + visitRelationalExpression()
+          + visitEqualityExpression()
+          + visitAndExpression()
+          + visitExclusiveOrExpression()
+          + visitInclusiveOrExpression()
+          + visitLogicalAndExpression()
+          + visitLogicalOrExpression()
+          + visitConditionalExpression()
+          + visitAssignmentExpression()
+          + visitAssignmentOperator()
+          + visitExpression()
+          + visitConstantExpression()
+          + visitDeclaration()
+          + visitDeclarationSpecifiers()
+          + visitDeclarationSpecifiers2()
+          + visitDeclarationSpecifier()
+          + visitInitDeclaratorList()
+          + visitInitDeclarator()
+          + visitStorageClassSpecifier()
+          + visitTypeSpecifier()
+          + visitStructOrUnionSpecifier()
+          + visitStructOrUnion()
+          + visitStructDeclarationList()
+          + visitStructDeclaration()
+          + visitSpecifierQualifierList()
+          + visitStructDeclaratorList()
+          + visitStructDeclarator()
+          + visitEnumSpecifier()
+          + visitEnumeratorList()
+          + visitEnumerator()
+          + visitEnumerationConstant()
+          + visitAtomicTypeSpecifier()
+          + visitTypeQualifier()
+          + visitFunctionSpecifier()
+          + visitAlignmentSpecifier()
+          + visitDeclarator()
+          + visitDirectDeclarator()
+          + visitGccDeclaratorExtension()
+          + visitGccAttributeSpecifier()
+          + visitGccAttributeList()
+          + visitGccAttribute()
+          + visitNestedParenthesesBlock()
+          + visitPointer()
+          + visitTypeQualifierList()
+          + visitParameterTypeList()
+          + visitParameterList()
+          + visitParameterDeclaration()
+          + visitIdentifierList()
+          + visitTypeName()
+          + visitAbstractDeclarator()
+          + visitDirectAbstractDeclarator()
+          + visitTypedefName()
+          + visitInitializer()
+          + visitInitializerList()
+          + visitDesignation()
+          + visitDesignatorList()
+          + visitDesignator()
+          + visitStaticAssertDeclaration()
+          + visitStatement()
+          + visitLabeledStatement()
+          + visitCompoundStatement()
+          + visitBlockItemList()
+          + visitBlockItem()
+          + visitExpressionStatement()
+          + visitSelectionStatement()
+          + visitIterationStatement()
+          + visitForCondition()
+          + visitForDeclaration()
+          + visitForExpression()
+          + visitJumpStatement()
+          + visitCompilationUnit()
+          + visitTranslationUnit()
+          + visitExternalDeclaration()
+          + visitFunctionDefinition()
+          + visitDeclarationList()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CLexer {
+          {static} # _decisionToDFA : DFA[]
+          {static} # _sharedContextCache : PredictionContextCache
+          {static} + T__0 : int
+          {static} + T__1 : int
+          {static} + T__2 : int
+          {static} + T__3 : int
+          {static} + T__4 : int
+          {static} + T__5 : int
+          {static} + T__6 : int
+          {static} + T__7 : int
+          {static} + T__8 : int
+          {static} + T__9 : int
+          {static} + T__10 : int
+          {static} + T__11 : int
+          {static} + T__12 : int
+          {static} + T__13 : int
+          {static} + Auto : int
+          {static} + Break : int
+          {static} + Case : int
+          {static} + Char : int
+          {static} + Const : int
+          {static} + Continue : int
+          {static} + Default : int
+          {static} + Do : int
+          {static} + Double : int
+          {static} + Else : int
+          {static} + Enum : int
+          {static} + Extern : int
+          {static} + Float : int
+          {static} + For : int
+          {static} + Goto : int
+          {static} + If : int
+          {static} + Inline : int
+          {static} + Int : int
+          {static} + Long : int
+          {static} + Register : int
+          {static} + Restrict : int
+          {static} + Return : int
+          {static} + Short : int
+          {static} + Signed : int
+          {static} + Sizeof : int
+          {static} + Static : int
+          {static} + Struct : int
+          {static} + Switch : int
+          {static} + Typedef : int
+          {static} + Union : int
+          {static} + Unsigned : int
+          {static} + Void : int
+          {static} + Volatile : int
+          {static} + While : int
+          {static} + Alignas : int
+          {static} + Alignof : int
+          {static} + Atomic : int
+          {static} + Bool : int
+          {static} + Complex : int
+          {static} + Generic : int
+          {static} + Imaginary : int
+          {static} + Noreturn : int
+          {static} + StaticAssert : int
+          {static} + ThreadLocal : int
+          {static} + LeftParen : int
+          {static} + RightParen : int
+          {static} + LeftBracket : int
+          {static} + RightBracket : int
+          {static} + LeftBrace : int
+          {static} + RightBrace : int
+          {static} + Less : int
+          {static} + LessEqual : int
+          {static} + Greater : int
+          {static} + GreaterEqual : int
+          {static} + LeftShift : int
+          {static} + RightShift : int
+          {static} + Plus : int
+          {static} + PlusPlus : int
+          {static} + Minus : int
+          {static} + MinusMinus : int
+          {static} + Star : int
+          {static} + Div : int
+          {static} + Mod : int
+          {static} + And : int
+          {static} + Or : int
+          {static} + AndAnd : int
+          {static} + OrOr : int
+          {static} + Caret : int
+          {static} + Not : int
+          {static} + Tilde : int
+          {static} + Question : int
+          {static} + Colon : int
+          {static} + Semi : int
+          {static} + Comma : int
+          {static} + Assign : int
+          {static} + StarAssign : int
+          {static} + DivAssign : int
+          {static} + ModAssign : int
+          {static} + PlusAssign : int
+          {static} + MinusAssign : int
+          {static} + LeftShiftAssign : int
+          {static} + RightShiftAssign : int
+          {static} + AndAssign : int
+          {static} + XorAssign : int
+          {static} + OrAssign : int
+          {static} + Equal : int
+          {static} + NotEqual : int
+          {static} + Arrow : int
+          {static} + Dot : int
+          {static} + Ellipsis : int
+          {static} + Identifier : int
+          {static} + Constant : int
+          {static} + DigitSequence : int
+          {static} + StringLiteral : int
+          {static} + ComplexDefine : int
+          {static} + AsmBlock : int
+          {static} + LineAfterPreprocessing : int
+          {static} + Include : int
+          {static} + LineDirective : int
+          {static} + PragmaDirective : int
+          {static} + Whitespace : int
+          {static} + Newline : int
+          {static} + BlockComment : int
+          {static} + LineComment : int
+          {static} + modeNames : String[]
+          {static} + ruleNames : String[]
+          {static} - _LITERAL_NAMES : String[]
+          {static} - _SYMBOLIC_NAMES : String[]
+          {static} + VOCABULARY : Vocabulary
+          {static} + tokenNames : String[]
+          {static} + _serializedATN : String
+          {static} + _ATN : ATN
+          + getTokenNames()
+          + getVocabulary()
+          + CLexer()
+          + getGrammarFileName()
+          + getRuleNames()
+          + getSerializedATN()
+          + getModeNames()
+          + getATN()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      interface CListener {
+          {abstract} + enterPrimaryExpression()
+          {abstract} + exitPrimaryExpression()
+          {abstract} + enterGenericSelection()
+          {abstract} + exitGenericSelection()
+          {abstract} + enterGenericAssocList()
+          {abstract} + exitGenericAssocList()
+          {abstract} + enterGenericAssociation()
+          {abstract} + exitGenericAssociation()
+          {abstract} + enterPostfixExpression()
+          {abstract} + exitPostfixExpression()
+          {abstract} + enterArgumentExpressionList()
+          {abstract} + exitArgumentExpressionList()
+          {abstract} + enterUnaryExpression()
+          {abstract} + exitUnaryExpression()
+          {abstract} + enterUnaryOperator()
+          {abstract} + exitUnaryOperator()
+          {abstract} + enterCastExpression()
+          {abstract} + exitCastExpression()
+          {abstract} + enterMultiplicativeExpression()
+          {abstract} + exitMultiplicativeExpression()
+          {abstract} + enterAdditiveExpression()
+          {abstract} + exitAdditiveExpression()
+          {abstract} + enterShiftExpression()
+          {abstract} + exitShiftExpression()
+          {abstract} + enterRelationalExpression()
+          {abstract} + exitRelationalExpression()
+          {abstract} + enterEqualityExpression()
+          {abstract} + exitEqualityExpression()
+          {abstract} + enterAndExpression()
+          {abstract} + exitAndExpression()
+          {abstract} + enterExclusiveOrExpression()
+          {abstract} + exitExclusiveOrExpression()
+          {abstract} + enterInclusiveOrExpression()
+          {abstract} + exitInclusiveOrExpression()
+          {abstract} + enterLogicalAndExpression()
+          {abstract} + exitLogicalAndExpression()
+          {abstract} + enterLogicalOrExpression()
+          {abstract} + exitLogicalOrExpression()
+          {abstract} + enterConditionalExpression()
+          {abstract} + exitConditionalExpression()
+          {abstract} + enterAssignmentExpression()
+          {abstract} + exitAssignmentExpression()
+          {abstract} + enterAssignmentOperator()
+          {abstract} + exitAssignmentOperator()
+          {abstract} + enterExpression()
+          {abstract} + exitExpression()
+          {abstract} + enterConstantExpression()
+          {abstract} + exitConstantExpression()
+          {abstract} + enterDeclaration()
+          {abstract} + exitDeclaration()
+          {abstract} + enterDeclarationSpecifiers()
+          {abstract} + exitDeclarationSpecifiers()
+          {abstract} + enterDeclarationSpecifiers2()
+          {abstract} + exitDeclarationSpecifiers2()
+          {abstract} + enterDeclarationSpecifier()
+          {abstract} + exitDeclarationSpecifier()
+          {abstract} + enterInitDeclaratorList()
+          {abstract} + exitInitDeclaratorList()
+          {abstract} + enterInitDeclarator()
+          {abstract} + exitInitDeclarator()
+          {abstract} + enterStorageClassSpecifier()
+          {abstract} + exitStorageClassSpecifier()
+          {abstract} + enterTypeSpecifier()
+          {abstract} + exitTypeSpecifier()
+          {abstract} + enterStructOrUnionSpecifier()
+          {abstract} + exitStructOrUnionSpecifier()
+          {abstract} + enterStructOrUnion()
+          {abstract} + exitStructOrUnion()
+          {abstract} + enterStructDeclarationList()
+          {abstract} + exitStructDeclarationList()
+          {abstract} + enterStructDeclaration()
+          {abstract} + exitStructDeclaration()
+          {abstract} + enterSpecifierQualifierList()
+          {abstract} + exitSpecifierQualifierList()
+          {abstract} + enterStructDeclaratorList()
+          {abstract} + exitStructDeclaratorList()
+          {abstract} + enterStructDeclarator()
+          {abstract} + exitStructDeclarator()
+          {abstract} + enterEnumSpecifier()
+          {abstract} + exitEnumSpecifier()
+          {abstract} + enterEnumeratorList()
+          {abstract} + exitEnumeratorList()
+          {abstract} + enterEnumerator()
+          {abstract} + exitEnumerator()
+          {abstract} + enterEnumerationConstant()
+          {abstract} + exitEnumerationConstant()
+          {abstract} + enterAtomicTypeSpecifier()
+          {abstract} + exitAtomicTypeSpecifier()
+          {abstract} + enterTypeQualifier()
+          {abstract} + exitTypeQualifier()
+          {abstract} + enterFunctionSpecifier()
+          {abstract} + exitFunctionSpecifier()
+          {abstract} + enterAlignmentSpecifier()
+          {abstract} + exitAlignmentSpecifier()
+          {abstract} + enterDeclarator()
+          {abstract} + exitDeclarator()
+          {abstract} + enterDirectDeclarator()
+          {abstract} + exitDirectDeclarator()
+          {abstract} + enterGccDeclaratorExtension()
+          {abstract} + exitGccDeclaratorExtension()
+          {abstract} + enterGccAttributeSpecifier()
+          {abstract} + exitGccAttributeSpecifier()
+          {abstract} + enterGccAttributeList()
+          {abstract} + exitGccAttributeList()
+          {abstract} + enterGccAttribute()
+          {abstract} + exitGccAttribute()
+          {abstract} + enterNestedParenthesesBlock()
+          {abstract} + exitNestedParenthesesBlock()
+          {abstract} + enterPointer()
+          {abstract} + exitPointer()
+          {abstract} + enterTypeQualifierList()
+          {abstract} + exitTypeQualifierList()
+          {abstract} + enterParameterTypeList()
+          {abstract} + exitParameterTypeList()
+          {abstract} + enterParameterList()
+          {abstract} + exitParameterList()
+          {abstract} + enterParameterDeclaration()
+          {abstract} + exitParameterDeclaration()
+          {abstract} + enterIdentifierList()
+          {abstract} + exitIdentifierList()
+          {abstract} + enterTypeName()
+          {abstract} + exitTypeName()
+          {abstract} + enterAbstractDeclarator()
+          {abstract} + exitAbstractDeclarator()
+          {abstract} + enterDirectAbstractDeclarator()
+          {abstract} + exitDirectAbstractDeclarator()
+          {abstract} + enterTypedefName()
+          {abstract} + exitTypedefName()
+          {abstract} + enterInitializer()
+          {abstract} + exitInitializer()
+          {abstract} + enterInitializerList()
+          {abstract} + exitInitializerList()
+          {abstract} + enterDesignation()
+          {abstract} + exitDesignation()
+          {abstract} + enterDesignatorList()
+          {abstract} + exitDesignatorList()
+          {abstract} + enterDesignator()
+          {abstract} + exitDesignator()
+          {abstract} + enterStaticAssertDeclaration()
+          {abstract} + exitStaticAssertDeclaration()
+          {abstract} + enterStatement()
+          {abstract} + exitStatement()
+          {abstract} + enterLabeledStatement()
+          {abstract} + exitLabeledStatement()
+          {abstract} + enterCompoundStatement()
+          {abstract} + exitCompoundStatement()
+          {abstract} + enterBlockItemList()
+          {abstract} + exitBlockItemList()
+          {abstract} + enterBlockItem()
+          {abstract} + exitBlockItem()
+          {abstract} + enterExpressionStatement()
+          {abstract} + exitExpressionStatement()
+          {abstract} + enterSelectionStatement()
+          {abstract} + exitSelectionStatement()
+          {abstract} + enterIterationStatement()
+          {abstract} + exitIterationStatement()
+          {abstract} + enterForCondition()
+          {abstract} + exitForCondition()
+          {abstract} + enterForDeclaration()
+          {abstract} + exitForDeclaration()
+          {abstract} + enterForExpression()
+          {abstract} + exitForExpression()
+          {abstract} + enterJumpStatement()
+          {abstract} + exitJumpStatement()
+          {abstract} + enterCompilationUnit()
+          {abstract} + exitCompilationUnit()
+          {abstract} + enterTranslationUnit()
+          {abstract} + exitTranslationUnit()
+          {abstract} + enterExternalDeclaration()
+          {abstract} + exitExternalDeclaration()
+          {abstract} + enterFunctionDefinition()
+          {abstract} + exitFunctionDefinition()
+          {abstract} + enterDeclarationList()
+          {abstract} + exitDeclarationList()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CParser {
+          {static} # _decisionToDFA : DFA[]
+          {static} # _sharedContextCache : PredictionContextCache
+          {static} + T__0 : int
+          {static} + T__1 : int
+          {static} + T__2 : int
+          {static} + T__3 : int
+          {static} + T__4 : int
+          {static} + T__5 : int
+          {static} + T__6 : int
+          {static} + T__7 : int
+          {static} + T__8 : int
+          {static} + T__9 : int
+          {static} + T__10 : int
+          {static} + T__11 : int
+          {static} + T__12 : int
+          {static} + T__13 : int
+          {static} + Auto : int
+          {static} + Break : int
+          {static} + Case : int
+          {static} + Char : int
+          {static} + Const : int
+          {static} + Continue : int
+          {static} + Default : int
+          {static} + Do : int
+          {static} + Double : int
+          {static} + Else : int
+          {static} + Enum : int
+          {static} + Extern : int
+          {static} + Float : int
+          {static} + For : int
+          {static} + Goto : int
+          {static} + If : int
+          {static} + Inline : int
+          {static} + Int : int
+          {static} + Long : int
+          {static} + Register : int
+          {static} + Restrict : int
+          {static} + Return : int
+          {static} + Short : int
+          {static} + Signed : int
+          {static} + Sizeof : int
+          {static} + Static : int
+          {static} + Struct : int
+          {static} + Switch : int
+          {static} + Typedef : int
+          {static} + Union : int
+          {static} + Unsigned : int
+          {static} + Void : int
+          {static} + Volatile : int
+          {static} + While : int
+          {static} + Alignas : int
+          {static} + Alignof : int
+          {static} + Atomic : int
+          {static} + Bool : int
+          {static} + Complex : int
+          {static} + Generic : int
+          {static} + Imaginary : int
+          {static} + Noreturn : int
+          {static} + StaticAssert : int
+          {static} + ThreadLocal : int
+          {static} + LeftParen : int
+          {static} + RightParen : int
+          {static} + LeftBracket : int
+          {static} + RightBracket : int
+          {static} + LeftBrace : int
+          {static} + RightBrace : int
+          {static} + Less : int
+          {static} + LessEqual : int
+          {static} + Greater : int
+          {static} + GreaterEqual : int
+          {static} + LeftShift : int
+          {static} + RightShift : int
+          {static} + Plus : int
+          {static} + PlusPlus : int
+          {static} + Minus : int
+          {static} + MinusMinus : int
+          {static} + Star : int
+          {static} + Div : int
+          {static} + Mod : int
+          {static} + And : int
+          {static} + Or : int
+          {static} + AndAnd : int
+          {static} + OrOr : int
+          {static} + Caret : int
+          {static} + Not : int
+          {static} + Tilde : int
+          {static} + Question : int
+          {static} + Colon : int
+          {static} + Semi : int
+          {static} + Comma : int
+          {static} + Assign : int
+          {static} + StarAssign : int
+          {static} + DivAssign : int
+          {static} + ModAssign : int
+          {static} + PlusAssign : int
+          {static} + MinusAssign : int
+          {static} + LeftShiftAssign : int
+          {static} + RightShiftAssign : int
+          {static} + AndAssign : int
+          {static} + XorAssign : int
+          {static} + OrAssign : int
+          {static} + Equal : int
+          {static} + NotEqual : int
+          {static} + Arrow : int
+          {static} + Dot : int
+          {static} + Ellipsis : int
+          {static} + Identifier : int
+          {static} + Constant : int
+          {static} + DigitSequence : int
+          {static} + StringLiteral : int
+          {static} + ComplexDefine : int
+          {static} + AsmBlock : int
+          {static} + LineAfterPreprocessing : int
+          {static} + Include : int
+          {static} + LineDirective : int
+          {static} + PragmaDirective : int
+          {static} + Whitespace : int
+          {static} + Newline : int
+          {static} + BlockComment : int
+          {static} + LineComment : int
+          {static} + RULE_primaryExpression : int
+          {static} + RULE_genericSelection : int
+          {static} + RULE_genericAssocList : int
+          {static} + RULE_genericAssociation : int
+          {static} + RULE_postfixExpression : int
+          {static} + RULE_argumentExpressionList : int
+          {static} + RULE_unaryExpression : int
+          {static} + RULE_unaryOperator : int
+          {static} + RULE_castExpression : int
+          {static} + RULE_multiplicativeExpression : int
+          {static} + RULE_additiveExpression : int
+          {static} + RULE_shiftExpression : int
+          {static} + RULE_relationalExpression : int
+          {static} + RULE_equalityExpression : int
+          {static} + RULE_andExpression : int
+          {static} + RULE_exclusiveOrExpression : int
+          {static} + RULE_inclusiveOrExpression : int
+          {static} + RULE_logicalAndExpression : int
+          {static} + RULE_logicalOrExpression : int
+          {static} + RULE_conditionalExpression : int
+          {static} + RULE_assignmentExpression : int
+          {static} + RULE_assignmentOperator : int
+          {static} + RULE_expression : int
+          {static} + RULE_constantExpression : int
+          {static} + RULE_declaration : int
+          {static} + RULE_declarationSpecifiers : int
+          {static} + RULE_declarationSpecifiers2 : int
+          {static} + RULE_declarationSpecifier : int
+          {static} + RULE_initDeclaratorList : int
+          {static} + RULE_initDeclarator : int
+          {static} + RULE_storageClassSpecifier : int
+          {static} + RULE_typeSpecifier : int
+          {static} + RULE_structOrUnionSpecifier : int
+          {static} + RULE_structOrUnion : int
+          {static} + RULE_structDeclarationList : int
+          {static} + RULE_structDeclaration : int
+          {static} + RULE_specifierQualifierList : int
+          {static} + RULE_structDeclaratorList : int
+          {static} + RULE_structDeclarator : int
+          {static} + RULE_enumSpecifier : int
+          {static} + RULE_enumeratorList : int
+          {static} + RULE_enumerator : int
+          {static} + RULE_enumerationConstant : int
+          {static} + RULE_atomicTypeSpecifier : int
+          {static} + RULE_typeQualifier : int
+          {static} + RULE_functionSpecifier : int
+          {static} + RULE_alignmentSpecifier : int
+          {static} + RULE_declarator : int
+          {static} + RULE_directDeclarator : int
+          {static} + RULE_gccDeclaratorExtension : int
+          {static} + RULE_gccAttributeSpecifier : int
+          {static} + RULE_gccAttributeList : int
+          {static} + RULE_gccAttribute : int
+          {static} + RULE_nestedParenthesesBlock : int
+          {static} + RULE_pointer : int
+          {static} + RULE_typeQualifierList : int
+          {static} + RULE_parameterTypeList : int
+          {static} + RULE_parameterList : int
+          {static} + RULE_parameterDeclaration : int
+          {static} + RULE_identifierList : int
+          {static} + RULE_typeName : int
+          {static} + RULE_abstractDeclarator : int
+          {static} + RULE_directAbstractDeclarator : int
+          {static} + RULE_typedefName : int
+          {static} + RULE_initializer : int
+          {static} + RULE_initializerList : int
+          {static} + RULE_designation : int
+          {static} + RULE_designatorList : int
+          {static} + RULE_designator : int
+          {static} + RULE_staticAssertDeclaration : int
+          {static} + RULE_statement : int
+          {static} + RULE_labeledStatement : int
+          {static} + RULE_compoundStatement : int
+          {static} + RULE_blockItemList : int
+          {static} + RULE_blockItem : int
+          {static} + RULE_expressionStatement : int
+          {static} + RULE_selectionStatement : int
+          {static} + RULE_iterationStatement : int
+          {static} + RULE_forCondition : int
+          {static} + RULE_forDeclaration : int
+          {static} + RULE_forExpression : int
+          {static} + RULE_jumpStatement : int
+          {static} + RULE_compilationUnit : int
+          {static} + RULE_translationUnit : int
+          {static} + RULE_externalDeclaration : int
+          {static} + RULE_functionDefinition : int
+          {static} + RULE_declarationList : int
+          {static} + ruleNames : String[]
+          {static} - _LITERAL_NAMES : String[]
+          {static} - _SYMBOLIC_NAMES : String[]
+          {static} + VOCABULARY : Vocabulary
+          {static} + tokenNames : String[]
+          {static} + _serializedATN : String
+          {static} + _ATN : ATN
+          + getTokenNames()
+          + getVocabulary()
+          + getGrammarFileName()
+          + getRuleNames()
+          + getSerializedATN()
+          + getATN()
+          + CParser()
+          + primaryExpression()
+          + genericSelection()
+          + genericAssocList()
+          - genericAssocList()
+          + genericAssociation()
+          + postfixExpression()
+          - postfixExpression()
+          + argumentExpressionList()
+          - argumentExpressionList()
+          + unaryExpression()
+          + unaryOperator()
+          + castExpression()
+          + multiplicativeExpression()
+          - multiplicativeExpression()
+          + additiveExpression()
+          - additiveExpression()
+          + shiftExpression()
+          - shiftExpression()
+          + relationalExpression()
+          - relationalExpression()
+          + equalityExpression()
+          - equalityExpression()
+          + andExpression()
+          - andExpression()
+          + exclusiveOrExpression()
+          - exclusiveOrExpression()
+          + inclusiveOrExpression()
+          - inclusiveOrExpression()
+          + logicalAndExpression()
+          - logicalAndExpression()
+          + logicalOrExpression()
+          - logicalOrExpression()
+          + conditionalExpression()
+          + assignmentExpression()
+          + assignmentOperator()
+          + expression()
+          - expression()
+          + constantExpression()
+          + declaration()
+          + declarationSpecifiers()
+          + declarationSpecifiers2()
+          + declarationSpecifier()
+          + initDeclaratorList()
+          - initDeclaratorList()
+          + initDeclarator()
+          + storageClassSpecifier()
+          + typeSpecifier()
+          - typeSpecifier()
+          + structOrUnionSpecifier()
+          + structOrUnion()
+          + structDeclarationList()
+          - structDeclarationList()
+          + structDeclaration()
+          + specifierQualifierList()
+          + structDeclaratorList()
+          - structDeclaratorList()
+          + structDeclarator()
+          + enumSpecifier()
+          + enumeratorList()
+          - enumeratorList()
+          + enumerator()
+          + enumerationConstant()
+          + atomicTypeSpecifier()
+          + typeQualifier()
+          + functionSpecifier()
+          + alignmentSpecifier()
+          + declarator()
+          + directDeclarator()
+          - directDeclarator()
+          + gccDeclaratorExtension()
+          + gccAttributeSpecifier()
+          + gccAttributeList()
+          + gccAttribute()
+          + nestedParenthesesBlock()
+          + pointer()
+          + typeQualifierList()
+          - typeQualifierList()
+          + parameterTypeList()
+          + parameterList()
+          - parameterList()
+          + parameterDeclaration()
+          + identifierList()
+          - identifierList()
+          + typeName()
+          + abstractDeclarator()
+          + directAbstractDeclarator()
+          - directAbstractDeclarator()
+          + typedefName()
+          + initializer()
+          + initializerList()
+          - initializerList()
+          + designation()
+          + designatorList()
+          - designatorList()
+          + designator()
+          + staticAssertDeclaration()
+          + statement()
+          + labeledStatement()
+          + compoundStatement()
+          + blockItemList()
+          - blockItemList()
+          + blockItem()
+          + expressionStatement()
+          + selectionStatement()
+          + iterationStatement()
+          + forCondition()
+          + forDeclaration()
+          + forExpression()
+          - forExpression()
+          + jumpStatement()
+          + compilationUnit()
+          + translationUnit()
+          - translationUnit()
+          + externalDeclaration()
+          + functionDefinition()
+          + declarationList()
+          - declarationList()
+          + sempred()
+          - genericAssocList_sempred()
+          - postfixExpression_sempred()
+          - argumentExpressionList_sempred()
+          - multiplicativeExpression_sempred()
+          - additiveExpression_sempred()
+          - shiftExpression_sempred()
+          - relationalExpression_sempred()
+          - equalityExpression_sempred()
+          - andExpression_sempred()
+          - exclusiveOrExpression_sempred()
+          - inclusiveOrExpression_sempred()
+          - logicalAndExpression_sempred()
+          - logicalOrExpression_sempred()
+          - expression_sempred()
+          - initDeclaratorList_sempred()
+          - typeSpecifier_sempred()
+          - structDeclarationList_sempred()
+          - structDeclaratorList_sempred()
+          - enumeratorList_sempred()
+          - directDeclarator_sempred()
+          - typeQualifierList_sempred()
+          - parameterList_sempred()
+          - identifierList_sempred()
+          - directAbstractDeclarator_sempred()
+          - initializerList_sempred()
+          - designatorList_sempred()
+          - blockItemList_sempred()
+          - forExpression_sempred()
+          - translationUnit_sempred()
+          - declarationList_sempred()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class PrimaryExpressionContext {
+          + Identifier()
+          + Constant()
+          + StringLiteral()
+          + StringLiteral()
+          + expression()
+          + genericSelection()
+          + compoundStatement()
+          + unaryExpression()
+          + typeName()
+          + PrimaryExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GenericSelectionContext {
+          + assignmentExpression()
+          + genericAssocList()
+          + GenericSelectionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GenericAssocListContext {
+          + genericAssociation()
+          + genericAssocList()
+          + GenericAssocListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GenericAssociationContext {
+          + typeName()
+          + assignmentExpression()
+          + GenericAssociationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class PostfixExpressionContext {
+          + primaryExpression()
+          + typeName()
+          + initializerList()
+          + postfixExpression()
+          + expression()
+          + argumentExpressionList()
+          + Identifier()
+          + PostfixExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ArgumentExpressionListContext {
+          + assignmentExpression()
+          + argumentExpressionList()
+          + ArgumentExpressionListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class UnaryExpressionContext {
+          + postfixExpression()
+          + unaryExpression()
+          + unaryOperator()
+          + castExpression()
+          + typeName()
+          + Identifier()
+          + UnaryExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class UnaryOperatorContext {
+          + UnaryOperatorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CastExpressionContext {
+          + typeName()
+          + castExpression()
+          + unaryExpression()
+          + DigitSequence()
+          + CastExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class MultiplicativeExpressionContext {
+          + castExpression()
+          + multiplicativeExpression()
+          + MultiplicativeExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AdditiveExpressionContext {
+          + multiplicativeExpression()
+          + additiveExpression()
+          + AdditiveExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ShiftExpressionContext {
+          + additiveExpression()
+          + shiftExpression()
+          + ShiftExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class RelationalExpressionContext {
+          + shiftExpression()
+          + relationalExpression()
+          + RelationalExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class EqualityExpressionContext {
+          + relationalExpression()
+          + equalityExpression()
+          + EqualityExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AndExpressionContext {
+          + equalityExpression()
+          + andExpression()
+          + AndExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ExclusiveOrExpressionContext {
+          + andExpression()
+          + exclusiveOrExpression()
+          + ExclusiveOrExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class InclusiveOrExpressionContext {
+          + exclusiveOrExpression()
+          + inclusiveOrExpression()
+          + InclusiveOrExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class LogicalAndExpressionContext {
+          + inclusiveOrExpression()
+          + logicalAndExpression()
+          + LogicalAndExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class LogicalOrExpressionContext {
+          + logicalAndExpression()
+          + logicalOrExpression()
+          + LogicalOrExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ConditionalExpressionContext {
+          + logicalOrExpression()
+          + expression()
+          + conditionalExpression()
+          + ConditionalExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AssignmentExpressionContext {
+          + conditionalExpression()
+          + unaryExpression()
+          + assignmentOperator()
+          + assignmentExpression()
+          + DigitSequence()
+          + AssignmentExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AssignmentOperatorContext {
+          + AssignmentOperatorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ExpressionContext {
+          + assignmentExpression()
+          + expression()
+          + ExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ConstantExpressionContext {
+          + conditionalExpression()
+          + ConstantExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclarationContext {
+          + declarationSpecifiers()
+          + initDeclaratorList()
+          + staticAssertDeclaration()
+          + DeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclarationSpecifiersContext {
+          + declarationSpecifier()
+          + declarationSpecifier()
+          + DeclarationSpecifiersContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclarationSpecifiers2Context {
+          + declarationSpecifier()
+          + declarationSpecifier()
+          + DeclarationSpecifiers2Context()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclarationSpecifierContext {
+          + storageClassSpecifier()
+          + typeSpecifier()
+          + typeQualifier()
+          + functionSpecifier()
+          + alignmentSpecifier()
+          + DeclarationSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class InitDeclaratorListContext {
+          + initDeclarator()
+          + initDeclaratorList()
+          + InitDeclaratorListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class InitDeclaratorContext {
+          + declarator()
+          + initializer()
+          + InitDeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StorageClassSpecifierContext {
+          + StorageClassSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TypeSpecifierContext {
+          + atomicTypeSpecifier()
+          + structOrUnionSpecifier()
+          + enumSpecifier()
+          + typedefName()
+          + constantExpression()
+          + typeSpecifier()
+          + pointer()
+          + TypeSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructOrUnionSpecifierContext {
+          + structOrUnion()
+          + structDeclarationList()
+          + Identifier()
+          + StructOrUnionSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructOrUnionContext {
+          + StructOrUnionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructDeclarationListContext {
+          + structDeclaration()
+          + structDeclarationList()
+          + StructDeclarationListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructDeclarationContext {
+          + specifierQualifierList()
+          + structDeclaratorList()
+          + staticAssertDeclaration()
+          + StructDeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class SpecifierQualifierListContext {
+          + typeSpecifier()
+          + specifierQualifierList()
+          + typeQualifier()
+          + SpecifierQualifierListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructDeclaratorListContext {
+          + structDeclarator()
+          + structDeclaratorList()
+          + StructDeclaratorListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StructDeclaratorContext {
+          + declarator()
+          + constantExpression()
+          + StructDeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class EnumSpecifierContext {
+          + enumeratorList()
+          + Identifier()
+          + EnumSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class EnumeratorListContext {
+          + enumerator()
+          + enumeratorList()
+          + EnumeratorListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class EnumeratorContext {
+          + enumerationConstant()
+          + constantExpression()
+          + EnumeratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class EnumerationConstantContext {
+          + Identifier()
+          + EnumerationConstantContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AtomicTypeSpecifierContext {
+          + typeName()
+          + AtomicTypeSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TypeQualifierContext {
+          + TypeQualifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class FunctionSpecifierContext {
+          + gccAttributeSpecifier()
+          + Identifier()
+          + FunctionSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AlignmentSpecifierContext {
+          + typeName()
+          + constantExpression()
+          + AlignmentSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclaratorContext {
+          + directDeclarator()
+          + pointer()
+          + gccDeclaratorExtension()
+          + gccDeclaratorExtension()
+          + DeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DirectDeclaratorContext {
+          + Identifier()
+          + declarator()
+          + DigitSequence()
+          + pointer()
+          + directDeclarator()
+          + typeSpecifier()
+          + typeQualifierList()
+          + assignmentExpression()
+          + parameterTypeList()
+          + identifierList()
+          + DirectDeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GccDeclaratorExtensionContext {
+          + StringLiteral()
+          + StringLiteral()
+          + gccAttributeSpecifier()
+          + GccDeclaratorExtensionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GccAttributeSpecifierContext {
+          + gccAttributeList()
+          + GccAttributeSpecifierContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GccAttributeListContext {
+          + gccAttribute()
+          + gccAttribute()
+          + GccAttributeListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class GccAttributeContext {
+          + argumentExpressionList()
+          + GccAttributeContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class NestedParenthesesBlockContext {
+          + nestedParenthesesBlock()
+          + nestedParenthesesBlock()
+          + NestedParenthesesBlockContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class PointerContext {
+          + typeQualifierList()
+          + pointer()
+          + PointerContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TypeQualifierListContext {
+          + typeQualifier()
+          + typeQualifierList()
+          + TypeQualifierListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ParameterTypeListContext {
+          + parameterList()
+          + ParameterTypeListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ParameterListContext {
+          + parameterDeclaration()
+          + parameterList()
+          + ParameterListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ParameterDeclarationContext {
+          + declarationSpecifiers()
+          + declarator()
+          + declarationSpecifiers2()
+          + abstractDeclarator()
+          + ParameterDeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class IdentifierListContext {
+          + Identifier()
+          + identifierList()
+          + IdentifierListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TypeNameContext {
+          + specifierQualifierList()
+          + abstractDeclarator()
+          + TypeNameContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class AbstractDeclaratorContext {
+          + pointer()
+          + directAbstractDeclarator()
+          + gccDeclaratorExtension()
+          + gccDeclaratorExtension()
+          + AbstractDeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DirectAbstractDeclaratorContext {
+          + abstractDeclarator()
+          + gccDeclaratorExtension()
+          + gccDeclaratorExtension()
+          + typeQualifierList()
+          + assignmentExpression()
+          + parameterTypeList()
+          + directAbstractDeclarator()
+          + DirectAbstractDeclaratorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TypedefNameContext {
+          + Identifier()
+          + TypedefNameContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class InitializerContext {
+          + assignmentExpression()
+          + initializerList()
+          + InitializerContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class InitializerListContext {
+          + initializer()
+          + designation()
+          + initializerList()
+          + InitializerListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DesignationContext {
+          + designatorList()
+          + DesignationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DesignatorListContext {
+          + designator()
+          + designatorList()
+          + DesignatorListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DesignatorContext {
+          + constantExpression()
+          + Identifier()
+          + DesignatorContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StaticAssertDeclarationContext {
+          + constantExpression()
+          + StringLiteral()
+          + StringLiteral()
+          + StaticAssertDeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class StatementContext {
+          + labeledStatement()
+          + compoundStatement()
+          + expressionStatement()
+          + selectionStatement()
+          + iterationStatement()
+          + jumpStatement()
+          + logicalOrExpression()
+          + logicalOrExpression()
+          + StatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class LabeledStatementContext {
+          + Identifier()
+          + statement()
+          + constantExpression()
+          + LabeledStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CompoundStatementContext {
+          + blockItemList()
+          + CompoundStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class BlockItemListContext {
+          + blockItem()
+          + blockItemList()
+          + BlockItemListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class BlockItemContext {
+          + statement()
+          + declaration()
+          + BlockItemContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ExpressionStatementContext {
+          + expression()
+          + ExpressionStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class SelectionStatementContext {
+          + expression()
+          + statement()
+          + statement()
+          + SelectionStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class IterationStatementContext {
+          + While()
+          + expression()
+          + statement()
+          + Do()
+          + For()
+          + forCondition()
+          + IterationStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ForConditionContext {
+          + forDeclaration()
+          + forExpression()
+          + forExpression()
+          + expression()
+          + ForConditionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ForDeclarationContext {
+          + declarationSpecifiers()
+          + initDeclaratorList()
+          + ForDeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ForExpressionContext {
+          + assignmentExpression()
+          + forExpression()
+          + ForExpressionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class JumpStatementContext {
+          + Identifier()
+          + expression()
+          + unaryExpression()
+          + JumpStatementContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class CompilationUnitContext {
+          + EOF()
+          + translationUnit()
+          + CompilationUnitContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class TranslationUnitContext {
+          + externalDeclaration()
+          + translationUnit()
+          + TranslationUnitContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class ExternalDeclarationContext {
+          + functionDefinition()
+          + declaration()
+          + ExternalDeclarationContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class FunctionDefinitionContext {
+          + declarator()
+          + compoundStatement()
+          + declarationSpecifiers()
+          + declarationList()
+          + FunctionDefinitionContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      class DeclarationListContext {
+          + declaration()
+          + declarationList()
+          + DeclarationListContext()
+          + getRuleIndex()
+          + enterRule()
+          + exitRule()
+          + accept()
+      }
+    }
+  }
+  
+
+  class TrimToSizeListener {
+      {static} + INSTANCE : TrimToSizeListener
+      + TrimToSizeListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  class TraceListener {
+      + TraceListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  package hu.bme.mit.mcmec.c2xta {
+    package hu.bme.mit.mcmec.c2xta.gen {
+      interface CVisitor {
+          {abstract} + visitPrimaryExpression()
+          {abstract} + visitGenericSelection()
+          {abstract} + visitGenericAssocList()
+          {abstract} + visitGenericAssociation()
+          {abstract} + visitPostfixExpression()
+          {abstract} + visitArgumentExpressionList()
+          {abstract} + visitUnaryExpression()
+          {abstract} + visitUnaryOperator()
+          {abstract} + visitCastExpression()
+          {abstract} + visitMultiplicativeExpression()
+          {abstract} + visitAdditiveExpression()
+          {abstract} + visitShiftExpression()
+          {abstract} + visitRelationalExpression()
+          {abstract} + visitEqualityExpression()
+          {abstract} + visitAndExpression()
+          {abstract} + visitExclusiveOrExpression()
+          {abstract} + visitInclusiveOrExpression()
+          {abstract} + visitLogicalAndExpression()
+          {abstract} + visitLogicalOrExpression()
+          {abstract} + visitConditionalExpression()
+          {abstract} + visitAssignmentExpression()
+          {abstract} + visitAssignmentOperator()
+          {abstract} + visitExpression()
+          {abstract} + visitConstantExpression()
+          {abstract} + visitDeclaration()
+          {abstract} + visitDeclarationSpecifiers()
+          {abstract} + visitDeclarationSpecifiers2()
+          {abstract} + visitDeclarationSpecifier()
+          {abstract} + visitInitDeclaratorList()
+          {abstract} + visitInitDeclarator()
+          {abstract} + visitStorageClassSpecifier()
+          {abstract} + visitTypeSpecifier()
+          {abstract} + visitStructOrUnionSpecifier()
+          {abstract} + visitStructOrUnion()
+          {abstract} + visitStructDeclarationList()
+          {abstract} + visitStructDeclaration()
+          {abstract} + visitSpecifierQualifierList()
+          {abstract} + visitStructDeclaratorList()
+          {abstract} + visitStructDeclarator()
+          {abstract} + visitEnumSpecifier()
+          {abstract} + visitEnumeratorList()
+          {abstract} + visitEnumerator()
+          {abstract} + visitEnumerationConstant()
+          {abstract} + visitAtomicTypeSpecifier()
+          {abstract} + visitTypeQualifier()
+          {abstract} + visitFunctionSpecifier()
+          {abstract} + visitAlignmentSpecifier()
+          {abstract} + visitDeclarator()
+          {abstract} + visitDirectDeclarator()
+          {abstract} + visitGccDeclaratorExtension()
+          {abstract} + visitGccAttributeSpecifier()
+          {abstract} + visitGccAttributeList()
+          {abstract} + visitGccAttribute()
+          {abstract} + visitNestedParenthesesBlock()
+          {abstract} + visitPointer()
+          {abstract} + visitTypeQualifierList()
+          {abstract} + visitParameterTypeList()
+          {abstract} + visitParameterList()
+          {abstract} + visitParameterDeclaration()
+          {abstract} + visitIdentifierList()
+          {abstract} + visitTypeName()
+          {abstract} + visitAbstractDeclarator()
+          {abstract} + visitDirectAbstractDeclarator()
+          {abstract} + visitTypedefName()
+          {abstract} + visitInitializer()
+          {abstract} + visitInitializerList()
+          {abstract} + visitDesignation()
+          {abstract} + visitDesignatorList()
+          {abstract} + visitDesignator()
+          {abstract} + visitStaticAssertDeclaration()
+          {abstract} + visitStatement()
+          {abstract} + visitLabeledStatement()
+          {abstract} + visitCompoundStatement()
+          {abstract} + visitBlockItemList()
+          {abstract} + visitBlockItem()
+          {abstract} + visitExpressionStatement()
+          {abstract} + visitSelectionStatement()
+          {abstract} + visitIterationStatement()
+          {abstract} + visitForCondition()
+          {abstract} + visitForDeclaration()
+          {abstract} + visitForExpression()
+          {abstract} + visitJumpStatement()
+          {abstract} + visitCompilationUnit()
+          {abstract} + visitTranslationUnit()
+          {abstract} + visitExternalDeclaration()
+          {abstract} + visitFunctionDefinition()
+          {abstract} + visitDeclarationList()
+      }
+    }
+  }
+  
+
+  CBaseListener -up-|> CListener
+  CBaseVisitor -up-|> CVisitor
+  CBaseVisitor -up-|> AbstractParseTreeVisitor
+  CLexer -up-|> Lexer
+  CParser -up-|> Parser
+  CParser +-down- PrimaryExpressionContext
+  CParser +-down- GenericSelectionContext
+  CParser +-down- GenericAssocListContext
+  CParser +-down- GenericAssociationContext
+  CParser +-down- PostfixExpressionContext
+  CParser +-down- ArgumentExpressionListContext
+  CParser +-down- UnaryExpressionContext
+  CParser +-down- UnaryOperatorContext
+  CParser +-down- CastExpressionContext
+  CParser +-down- MultiplicativeExpressionContext
+  CParser +-down- AdditiveExpressionContext
+  CParser +-down- ShiftExpressionContext
+  CParser +-down- RelationalExpressionContext
+  CParser +-down- EqualityExpressionContext
+  CParser +-down- AndExpressionContext
+  CParser +-down- ExclusiveOrExpressionContext
+  CParser +-down- InclusiveOrExpressionContext
+  CParser +-down- LogicalAndExpressionContext
+  CParser +-down- LogicalOrExpressionContext
+  CParser +-down- ConditionalExpressionContext
+  CParser +-down- AssignmentExpressionContext
+  CParser +-down- AssignmentOperatorContext
+  CParser +-down- ExpressionContext
+  CParser +-down- ConstantExpressionContext
+  CParser +-down- DeclarationContext
+  CParser +-down- DeclarationSpecifiersContext
+  CParser +-down- DeclarationSpecifiers2Context
+  CParser +-down- DeclarationSpecifierContext
+  CParser +-down- InitDeclaratorListContext
+  CParser +-down- InitDeclaratorContext
+  CParser +-down- StorageClassSpecifierContext
+  CParser +-down- TypeSpecifierContext
+  CParser +-down- StructOrUnionSpecifierContext
+  CParser +-down- StructOrUnionContext
+  CParser +-down- StructDeclarationListContext
+  CParser +-down- StructDeclarationContext
+  CParser +-down- SpecifierQualifierListContext
+  CParser +-down- StructDeclaratorListContext
+  CParser +-down- StructDeclaratorContext
+  CParser +-down- EnumSpecifierContext
+  CParser +-down- EnumeratorListContext
+  CParser +-down- EnumeratorContext
+  CParser +-down- EnumerationConstantContext
+  CParser +-down- AtomicTypeSpecifierContext
+  CParser +-down- TypeQualifierContext
+  CParser +-down- FunctionSpecifierContext
+  CParser +-down- AlignmentSpecifierContext
+  CParser +-down- DeclaratorContext
+  CParser +-down- DirectDeclaratorContext
+  CParser +-down- GccDeclaratorExtensionContext
+  CParser +-down- GccAttributeSpecifierContext
+  CParser +-down- GccAttributeListContext
+  CParser +-down- GccAttributeContext
+  CParser +-down- NestedParenthesesBlockContext
+  CParser +-down- PointerContext
+  CParser +-down- TypeQualifierListContext
+  CParser +-down- ParameterTypeListContext
+  CParser +-down- ParameterListContext
+  CParser +-down- ParameterDeclarationContext
+  CParser +-down- IdentifierListContext
+  CParser +-down- TypeNameContext
+  CParser +-down- AbstractDeclaratorContext
+  CParser +-down- DirectAbstractDeclaratorContext
+  CParser +-down- TypedefNameContext
+  CParser +-down- InitializerContext
+  CParser +-down- InitializerListContext
+  CParser +-down- DesignationContext
+  CParser +-down- DesignatorListContext
+  CParser +-down- DesignatorContext
+  CParser +-down- StaticAssertDeclarationContext
+  CParser +-down- StatementContext
+  CParser +-down- LabeledStatementContext
+  CParser +-down- CompoundStatementContext
+  CParser +-down- BlockItemListContext
+  CParser +-down- BlockItemContext
+  CParser +-down- ExpressionStatementContext
+  CParser +-down- SelectionStatementContext
+  CParser +-down- IterationStatementContext
+  CParser +-down- ForConditionContext
+  CParser +-down- ForDeclarationContext
+  CParser +-down- ForExpressionContext
+  CParser +-down- JumpStatementContext
+  CParser +-down- CompilationUnitContext
+  CParser +-down- TranslationUnitContext
+  CParser +-down- ExternalDeclarationContext
+  CParser +-down- FunctionDefinitionContext
+  CParser +-down- DeclarationListContext
+  CParser +-down- TrimToSizeListener
+  CParser +-down- TraceListener
+  PrimaryExpressionContext -up-|> ParserRuleContext
+  GenericSelectionContext -up-|> ParserRuleContext
+  GenericAssocListContext -up-|> ParserRuleContext
+  GenericAssociationContext -up-|> ParserRuleContext
+  PostfixExpressionContext -up-|> ParserRuleContext
+  ArgumentExpressionListContext -up-|> ParserRuleContext
+  UnaryExpressionContext -up-|> ParserRuleContext
+  UnaryOperatorContext -up-|> ParserRuleContext
+  CastExpressionContext -up-|> ParserRuleContext
+  MultiplicativeExpressionContext -up-|> ParserRuleContext
+  AdditiveExpressionContext -up-|> ParserRuleContext
+  ShiftExpressionContext -up-|> ParserRuleContext
+  RelationalExpressionContext -up-|> ParserRuleContext
+  EqualityExpressionContext -up-|> ParserRuleContext
+  AndExpressionContext -up-|> ParserRuleContext
+  ExclusiveOrExpressionContext -up-|> ParserRuleContext
+  InclusiveOrExpressionContext -up-|> ParserRuleContext
+  LogicalAndExpressionContext -up-|> ParserRuleContext
+  LogicalOrExpressionContext -up-|> ParserRuleContext
+  ConditionalExpressionContext -up-|> ParserRuleContext
+  AssignmentExpressionContext -up-|> ParserRuleContext
+  AssignmentOperatorContext -up-|> ParserRuleContext
+  ExpressionContext -up-|> ParserRuleContext
+  ConstantExpressionContext -up-|> ParserRuleContext
+  DeclarationContext -up-|> ParserRuleContext
+  DeclarationSpecifiersContext -up-|> ParserRuleContext
+  DeclarationSpecifiers2Context -up-|> ParserRuleContext
+  DeclarationSpecifierContext -up-|> ParserRuleContext
+  InitDeclaratorListContext -up-|> ParserRuleContext
+  InitDeclaratorContext -up-|> ParserRuleContext
+  StorageClassSpecifierContext -up-|> ParserRuleContext
+  TypeSpecifierContext -up-|> ParserRuleContext
+  StructOrUnionSpecifierContext -up-|> ParserRuleContext
+  StructOrUnionContext -up-|> ParserRuleContext
+  StructDeclarationListContext -up-|> ParserRuleContext
+  StructDeclarationContext -up-|> ParserRuleContext
+  SpecifierQualifierListContext -up-|> ParserRuleContext
+  StructDeclaratorListContext -up-|> ParserRuleContext
+  StructDeclaratorContext -up-|> ParserRuleContext
+  EnumSpecifierContext -up-|> ParserRuleContext
+  EnumeratorListContext -up-|> ParserRuleContext
+  EnumeratorContext -up-|> ParserRuleContext
+  EnumerationConstantContext -up-|> ParserRuleContext
+  AtomicTypeSpecifierContext -up-|> ParserRuleContext
+  TypeQualifierContext -up-|> ParserRuleContext
+  FunctionSpecifierContext -up-|> ParserRuleContext
+  AlignmentSpecifierContext -up-|> ParserRuleContext
+  DeclaratorContext -up-|> ParserRuleContext
+  DirectDeclaratorContext -up-|> ParserRuleContext
+  GccDeclaratorExtensionContext -up-|> ParserRuleContext
+  GccAttributeSpecifierContext -up-|> ParserRuleContext
+  GccAttributeListContext -up-|> ParserRuleContext
+  GccAttributeContext -up-|> ParserRuleContext
+  NestedParenthesesBlockContext -up-|> ParserRuleContext
+  PointerContext -up-|> ParserRuleContext
+  TypeQualifierListContext -up-|> ParserRuleContext
+  ParameterTypeListContext -up-|> ParserRuleContext
+  ParameterListContext -up-|> ParserRuleContext
+  ParameterDeclarationContext -up-|> ParserRuleContext
+  IdentifierListContext -up-|> ParserRuleContext
+  TypeNameContext -up-|> ParserRuleContext
+  AbstractDeclaratorContext -up-|> ParserRuleContext
+  DirectAbstractDeclaratorContext -up-|> ParserRuleContext
+  TypedefNameContext -up-|> ParserRuleContext
+  InitializerContext -up-|> ParserRuleContext
+  InitializerListContext -up-|> ParserRuleContext
+  DesignationContext -up-|> ParserRuleContext
+  DesignatorListContext -up-|> ParserRuleContext
+  DesignatorContext -up-|> ParserRuleContext
+  StaticAssertDeclarationContext -up-|> ParserRuleContext
+  StatementContext -up-|> ParserRuleContext
+  LabeledStatementContext -up-|> ParserRuleContext
+  CompoundStatementContext -up-|> ParserRuleContext
+  BlockItemListContext -up-|> ParserRuleContext
+  BlockItemContext -up-|> ParserRuleContext
+  ExpressionStatementContext -up-|> ParserRuleContext
+  SelectionStatementContext -up-|> ParserRuleContext
+  IterationStatementContext -up-|> ParserRuleContext
+  ForConditionContext -up-|> ParserRuleContext
+  ForDeclarationContext -up-|> ParserRuleContext
+  ForExpressionContext -up-|> ParserRuleContext
+  JumpStatementContext -up-|> ParserRuleContext
+  CompilationUnitContext -up-|> ParserRuleContext
+  TranslationUnitContext -up-|> ParserRuleContext
+  ExternalDeclarationContext -up-|> ParserRuleContext
+  FunctionDefinitionContext -up-|> ParserRuleContext
+  DeclarationListContext -up-|> ParserRuleContext
+  TrimToSizeListener -up-|> ParseTreeListener
+  TraceListener -up-|> ParseTreeListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

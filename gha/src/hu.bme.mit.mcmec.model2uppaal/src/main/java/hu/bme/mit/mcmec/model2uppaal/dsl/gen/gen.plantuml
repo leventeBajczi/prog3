@@ -1,0 +1,325 @@
+@startuml
+
+title __GEN's Class Diagram__\n
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssueBaseListener {
+            + enterIssues()
+            + exitIssues()
+            + enterIssue()
+            + exitIssue()
+            + enterThreads()
+            + exitThreads()
+            + enterThread()
+            + exitThread()
+            + enterIo()
+            + exitIo()
+            + enterEveryRule()
+            + exitEveryRule()
+            + visitTerminal()
+            + visitErrorNode()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssueBaseVisitor {
+            + visitIssues()
+            + visitIssue()
+            + visitThreads()
+            + visitThread()
+            + visitIo()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssueLexer {
+            {static} # _decisionToDFA : DFA[]
+            {static} # _sharedContextCache : PredictionContextCache
+            {static} + LCURLY : int
+            {static} + RCURLY : int
+            {static} + COLON : int
+            {static} + SEMICOLON : int
+            {static} + ISSUE : int
+            {static} + LOAD : int
+            {static} + STORE : int
+            {static} + RELA : int
+            {static} + ACQ : int
+            {static} + SEQ : int
+            {static} + RELE : int
+            {static} + FENCE : int
+            {static} + NAME : int
+            {static} + WHITESPACE : int
+            {static} + NEWLINE : int
+            {static} + modeNames : String[]
+            {static} + ruleNames : String[]
+            {static} - _LITERAL_NAMES : String[]
+            {static} - _SYMBOLIC_NAMES : String[]
+            {static} + VOCABULARY : Vocabulary
+            {static} + tokenNames : String[]
+            {static} + _serializedATN : String
+            {static} + _ATN : ATN
+            + getTokenNames()
+            + getVocabulary()
+            + IssueLexer()
+            + getGrammarFileName()
+            + getRuleNames()
+            + getSerializedATN()
+            + getModeNames()
+            + getATN()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        interface IssueListener {
+            {abstract} + enterIssues()
+            {abstract} + exitIssues()
+            {abstract} + enterIssue()
+            {abstract} + exitIssue()
+            {abstract} + enterThreads()
+            {abstract} + exitThreads()
+            {abstract} + enterThread()
+            {abstract} + exitThread()
+            {abstract} + enterIo()
+            {abstract} + exitIo()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssueParser {
+            {static} # _decisionToDFA : DFA[]
+            {static} # _sharedContextCache : PredictionContextCache
+            {static} + LCURLY : int
+            {static} + RCURLY : int
+            {static} + COLON : int
+            {static} + SEMICOLON : int
+            {static} + ISSUE : int
+            {static} + LOAD : int
+            {static} + STORE : int
+            {static} + RELA : int
+            {static} + ACQ : int
+            {static} + SEQ : int
+            {static} + RELE : int
+            {static} + FENCE : int
+            {static} + NAME : int
+            {static} + WHITESPACE : int
+            {static} + NEWLINE : int
+            {static} + RULE_issues : int
+            {static} + RULE_issue : int
+            {static} + RULE_threads : int
+            {static} + RULE_thread : int
+            {static} + RULE_io : int
+            {static} + ruleNames : String[]
+            {static} - _LITERAL_NAMES : String[]
+            {static} - _SYMBOLIC_NAMES : String[]
+            {static} + VOCABULARY : Vocabulary
+            {static} + tokenNames : String[]
+            {static} + _serializedATN : String
+            {static} + _ATN : ATN
+            + getTokenNames()
+            + getVocabulary()
+            + getGrammarFileName()
+            + getRuleNames()
+            + getSerializedATN()
+            + getATN()
+            + IssueParser()
+            + issues()
+            + issue()
+            + threads()
+            + thread()
+            + io()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssuesContext {
+            + EOF()
+            + issue()
+            + issue()
+            + IssuesContext()
+            + getRuleIndex()
+            + enterRule()
+            + exitRule()
+            + accept()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IssueContext {
+            + ISSUE()
+            + WHITESPACE()
+            + WHITESPACE()
+            + NAME()
+            + LCURLY()
+            + threads()
+            + RCURLY()
+            + NEWLINE()
+            + IssueContext()
+            + getRuleIndex()
+            + enterRule()
+            + exitRule()
+            + accept()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class ThreadsContext {
+            + thread()
+            + thread()
+            + WHITESPACE()
+            + WHITESPACE()
+            + COLON()
+            + COLON()
+            + ThreadsContext()
+            + getRuleIndex()
+            + enterRule()
+            + exitRule()
+            + accept()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class ThreadContext {
+            + io()
+            + io()
+            + WHITESPACE()
+            + WHITESPACE()
+            + SEMICOLON()
+            + SEMICOLON()
+            + ThreadContext()
+            + getRuleIndex()
+            + enterRule()
+            + exitRule()
+            + accept()
+        }
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        class IoContext {
+            + WHITESPACE()
+            + STORE()
+            + RELA()
+            + RELE()
+            + SEQ()
+            + LOAD()
+            + ACQ()
+            + IoContext()
+            + getRuleIndex()
+            + enterRule()
+            + exitRule()
+            + accept()
+        }
+      }
+    }
+  }
+  
+
+  class TrimToSizeListener {
+      {static} + INSTANCE : TrimToSizeListener
+      + TrimToSizeListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  class TraceListener {
+      + TraceListener()
+      + enterEveryRule()
+      + visitTerminal()
+      + visitErrorNode()
+      + exitEveryRule()
+  }
+  
+
+  package hu.bme.mit.mcmec.model2uppaal {
+    package hu.bme.mit.mcmec.model2uppaal.dsl {
+      package hu.bme.mit.mcmec.model2uppaal.dsl.gen {
+        interface IssueVisitor {
+            {abstract} + visitIssues()
+            {abstract} + visitIssue()
+            {abstract} + visitThreads()
+            {abstract} + visitThread()
+            {abstract} + visitIo()
+        }
+      }
+    }
+  }
+  
+
+  IssueBaseListener -up-|> IssueListener
+  IssueBaseVisitor -up-|> IssueVisitor
+  IssueBaseVisitor -up-|> AbstractParseTreeVisitor
+  IssueLexer -up-|> Lexer
+  IssueParser -up-|> Parser
+  IssueParser +-down- IssuesContext
+  IssueParser +-down- IssueContext
+  IssueParser +-down- ThreadsContext
+  IssueParser +-down- ThreadContext
+  IssueParser +-down- IoContext
+  IssueParser +-down- TrimToSizeListener
+  IssueParser +-down- TraceListener
+  IssuesContext -up-|> ParserRuleContext
+  IssueContext -up-|> ParserRuleContext
+  ThreadsContext -up-|> ParserRuleContext
+  ThreadContext -up-|> ParserRuleContext
+  IoContext -up-|> ParserRuleContext
+  TrimToSizeListener -up-|> ParseTreeListener
+  TraceListener -up-|> ParseTreeListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

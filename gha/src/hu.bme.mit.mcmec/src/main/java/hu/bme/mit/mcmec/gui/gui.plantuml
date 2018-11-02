@@ -1,0 +1,304 @@
+@startuml
+
+title __GUI's Class Diagram__\n
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class McmecGui {
+          - tabbedPane1 : JTabbedPane
+          - panel1 : JPanel
+          - browseButton : JButton
+          - textField1 : JTextField
+          - list1 : JList
+          - newButton : JButton
+          - viewButton : JButton
+          - editButton : JButton
+          - deleteButton : JButton
+          - textPane1 : JTextPane
+          - generateButton : JButton
+          - textField3 : JTextField
+          - browseButton3 : JButton
+          - textPane2 : JTextPane
+          - saveButton : JButton
+          - textPane3 : JTextPane
+          - generateButton1 : JButton
+          - saveButton1 : JButton
+          - saveButton2 : JButton
+          - textPane4 : JTextPane
+          - textPane5 : JTextPane
+          - textPane6 : JTextPane
+          - textField2 : JTextField
+          - textField4 : JTextField
+          - browseButton1 : JButton
+          - browseButton2 : JButton
+          - generateButton2 : JButton
+          - saveButton5 : JButton
+          - saveButton4 : JButton
+          - saveButton3 : JButton
+          - tree1 : JTree
+          - saveButton6 : JButton
+          - saveButton7 : JButton
+          - textPane7 : JTextPane
+          - textPane8 : JTextPane
+          - textField5 : JTextField
+          - textField6 : JTextField
+          - browseButton4 : JButton
+          - browseButton5 : JButton
+          - generateButton3 : JButton
+          - statusLabel : JLabel
+          - showMitigationButton : JButton
+          - textFieldAll1 : JTextField
+          - textFieldAll2 : JTextField
+          - brosweAll1 : JButton
+          - brosweAll2 : JButton
+          - litmuslist : JList
+          - textPaneAll2 : JTextPane
+          - saveButtonAll2 : JButton
+          - generateAll : JButton
+          - treeAll : JTree
+          - showMitigationButton2 : JButton
+          - uppaal : boolean
+          - uppaalHome : File
+          - list : String
+          - UPPAL_END : String
+          {static} + setupUI()
+          - checkUppaal()
+          - registerListeners()
+          - $$$setupUI$$$()
+          + $$$getRootComponent$$$()
+          - openEditor()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class SaveButtonListener {
+          - textPane : JTextPane
+          - textField : JTextField
+          + SaveButtonListener()
+          + actionPerformed()
+          - write()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class BrowseButtonListener {
+          - textField : JTextField
+          - onlyDir : boolean
+          + BrowseButtonListener()
+          + BrowseButtonListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class ListIssuesListener {
+          - listModel : DefaultListModel
+          - folderTextField : JTextField
+          + ListIssuesListener()
+          + listFiles()
+          + insertUpdate()
+          + removeUpdate()
+          + changedUpdate()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class LoadTextListener {
+          - textField : JTextField
+          - textPane : JTextPane
+          + LoadTextListener()
+          - load()
+          + insertUpdate()
+          + removeUpdate()
+          + changedUpdate()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class NewLitmusTestListener {
+          - textField : JTextField
+          + NewLitmusTestListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class ViewLitmusTestListener {
+          - textField : JTextField
+          - selectedValue : JList
+          + ViewLitmusTestListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class EditLitmusTestListener {
+          - textField : JTextField
+          - selectedValue : JList
+          + EditLitmusTestListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class DeleteLitmusTestListener {
+          - textField : JTextField
+          - selectedValue : JList
+          + DeleteLitmusTestListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class GenerateIssuesListener {
+          - textField : JTextField
+          - textPane : JTextPane
+          + GenerateIssuesListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class GenerateXtaListener {
+          - textField : JTextField
+          - textPane : JTextPane
+          + GenerateXtaListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class GenerateQueryListener {
+          - textField1 : JTextField
+          - textField2 : JTextField
+          - textPane : JTextPane
+          + GenerateQueryListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class VerifyListener {
+          - textField1 : JTextField
+          - textField2 : JTextField
+          - model : DefaultTreeModel
+          + VerifyListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class SetUppaalListener {
+          + mouseClicked()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class ShowMitigationListener {
+          - textField : JTextField
+          - xta : boolean
+          + ShowMitigationListener()
+          + actionPerformed()
+          - mitigateGivenC()
+          - mitigateGivenXTA()
+      }
+    }
+  }
+  
+
+  package hu.bme.mit.mcmec {
+    package hu.bme.mit.mcmec.gui {
+      class AllListener {
+          - textField1 : JTextField
+          - textField2 : JTextField
+          - model : DefaultTreeModel
+          + AllListener()
+          + actionPerformed()
+      }
+    }
+  }
+  
+
+  McmecGui o-- ListIssuesListener : listIssuesListener
+  McmecGui +-down- SaveButtonListener
+  McmecGui +-down- BrowseButtonListener
+  McmecGui +-down- ListIssuesListener
+  McmecGui +-down- LoadTextListener
+  McmecGui +-down- NewLitmusTestListener
+  McmecGui +-down- ViewLitmusTestListener
+  McmecGui +-down- EditLitmusTestListener
+  McmecGui +-down- DeleteLitmusTestListener
+  McmecGui +-down- GenerateIssuesListener
+  McmecGui +-down- GenerateXtaListener
+  McmecGui +-down- GenerateQueryListener
+  McmecGui +-down- VerifyListener
+  McmecGui +-down- SetUppaalListener
+  McmecGui +-down- ShowMitigationListener
+  McmecGui +-down- AllListener
+  SaveButtonListener -up-|> ActionListener
+  BrowseButtonListener -up-|> ActionListener
+  ListIssuesListener -up-|> DocumentListener
+  LoadTextListener -up-|> DocumentListener
+  NewLitmusTestListener -up-|> ActionListener
+  ViewLitmusTestListener -up-|> ActionListener
+  EditLitmusTestListener -up-|> ActionListener
+  DeleteLitmusTestListener -up-|> ActionListener
+  GenerateIssuesListener -up-|> ActionListener
+  GenerateXtaListener -up-|> ActionListener
+  GenerateQueryListener -up-|> ActionListener
+  VerifyListener -up-|> ActionListener
+  SetUppaalListener -up-|> MouseAdapter
+  ShowMitigationListener -up-|> ActionListener
+  AllListener -up-|> ActionListener
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
