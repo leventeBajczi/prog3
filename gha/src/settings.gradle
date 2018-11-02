@@ -1,0 +1,8 @@
+rootProject.name = 'mcmec'
+include 'hu.bme.mit.mcmec.tricheckparser'
+include 'hu.bme.mit.mcmec.verifier'
+include 'hu.bme.mit.mcmec.model2uppaal'
+include 'hu.bme.mit.mcmec.c2xta'
+include 'hu.bme.mit.mcmec.mitigationgenerator'
+include 'hu.bme.mit.mcmec'
+

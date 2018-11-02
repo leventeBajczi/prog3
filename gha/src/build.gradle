@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+apply plugin: 'application'
+
+
+group 'mcmec'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven {
+        url  "https://dl.bintray.com/ftsrg/maven"
+    }
+}
+
+build.dependsOn installDist
+
+
+dependencies {
+    compile project(':hu.bme.mit.mcmec')
+    compile project(':hu.bme.mit.mcmec.mitigationgenerator')
+    compile project(':hu.bme.mit.mcmec.c2xta')
+    compile project(':hu.bme.mit.mcmec.model2uppaal')
+    compile project(':hu.bme.mit.mcmec.tricheckparser')
+    compile project(':hu.bme.mit.mcmec.verifier')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+mainClassName = 'hu.bme.mit.mcmec.Mcmec'
